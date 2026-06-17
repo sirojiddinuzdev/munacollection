@@ -1,6 +1,7 @@
 import sqlite3
 import os
 from datetime import datetime
+import config
 
 class Database:
     def __init__(self, db_file):
@@ -62,6 +63,24 @@ class Database:
                     value TEXT
                 )
             """)
+            
+            # Add new columns to orders if not exist
+            try:
+                cursor.execute("ALTER TABLE orders ADD COLUMN approved_at TEXT")
+            except sqlite3.OperationalError:
+                pass
+            try:
+                cursor.execute("ALTER TABLE orders ADD COLUMN delivery_deadline TEXT")
+            except sqlite3.OperationalError:
+                pass
+            try:
+                cursor.execute("ALTER TABLE orders ADD COLUMN delivered_at TEXT")
+            except sqlite3.OperationalError:
+                pass
+            try:
+                cursor.execute("ALTER TABLE orders ADD COLUMN last_notified_days_left INTEGER DEFAULT -1")
+            except sqlite3.OperationalError:
+                pass
             
             conn.commit()
 
@@ -161,6 +180,69 @@ class Database:
             cursor.execute("UPDATE orders SET status = ? WHERE id = ?", (status, order_id))
             conn.commit()
 
+    def approve_order(self, order_id, approved_at, delivery_deadline):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "UPDATE orders SET status = 'approved', approved_at = ?, delivery_deadline = ?, last_notified_days_left = -1 WHERE id = ?",
+                (approved_at, delivery_deadline, order_id)
+            )
+            conn.commit()
+
+    def deliver_order(self, order_id, delivered_at):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "UPDATE orders SET status = 'delivered', delivered_at = ? WHERE id = ?",
+                (delivered_at, order_id)
+            )
+            conn.commit()
+
+    def extend_order_deadline(self, order_id, new_deadline):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "UPDATE orders SET delivery_deadline = ?, last_notified_days_left = -1 WHERE id = ?",
+                (new_deadline, order_id)
+            )
+            conn.commit()
+
+    def update_order_notified_days(self, order_id, days):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("UPDATE orders SET last_notified_days_left = ? WHERE id = ?", (days, order_id))
+            conn.commit()
+
+    def get_undelivered_orders(self):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT o.*, u.username, u.phone_number, 
+                       p.location, p.delivery_time, p.price, p.description, p.photo_id
+                FROM orders o
+                JOIN users u ON o.user_id = u.user_id
+                JOIN products p ON o.product_id = p.id
+                WHERE o.status = 'approved'
+                ORDER BY o.id ASC
+            """)
+            rows = cursor.fetchall()
+            return [dict(row) for row in rows]
+
+    def get_delivered_orders(self):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT o.*, u.username, u.phone_number, 
+                       p.location, p.delivery_time, p.price, p.description, p.photo_id
+                FROM orders o
+                JOIN users u ON o.user_id = u.user_id
+                JOIN products p ON o.product_id = p.id
+                WHERE o.status = 'delivered'
+                ORDER BY o.delivered_at DESC
+            """)
+            rows = cursor.fetchall()
+            return [dict(row) for row in rows]
+
     # Settings management
     def get_setting(self, key, default=None):
         with self._get_connection() as conn:
@@ -174,3 +256,6 @@ class Database:
             cursor = conn.cursor()
             cursor.execute("INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)", (key, str(value)))
             conn.commit()
+
+# Expose global database instance
+db = Database(config.DB_FILE)

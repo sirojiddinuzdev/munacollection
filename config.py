@@ -8,6 +8,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4
 ADMIN_IDS = [
     # Replace these with real Telegram User IDs
     8270492933,
+    7844532860
 ]
 
 # Telegram Group Chat ID where the ads will be posted.
