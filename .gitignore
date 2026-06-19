@@ -4,4 +4,4 @@ __pycache__/
 *.log
 .env
 bot.log
-sales_bot.db
+*.db

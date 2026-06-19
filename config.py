@@ -1,28 +1,26 @@
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Telegram Bot Token (obtained from @BotFather)
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-# List of Admin Telegram User IDs (integers). Add your own Telegram User ID here.
-# You can find your ID using bots like @userinfobot or @raw_data_bot.
-ADMIN_IDS = [
-    # Replace these with real Telegram User IDs
-    8270492933,
-    7844532860
-]
+# List of Admin Telegram User IDs (integers).
+# In .env it can be a comma-separated list like ADMIN_IDS=123,456
+ADMIN_IDS_STR = os.getenv("ADMIN_IDS")
+ADMIN_IDS = [int(x.strip()) for x in ADMIN_IDS_STR.split(",") if x.strip()]
 
 # Telegram Group Chat ID where the ads will be posted.
-# Note: Group IDs usually start with -100 (e.g., -1001234567890).
-# The bot must be added to this group as an administrator with permission to post messages.
-GROUP_ID = int(os.getenv("GROUP_ID", "-1004475483869"))
+GROUP_ID = int(os.getenv("GROUP_ID"))
 
 # Contact username of the admin for buyers to reach out if needed.
-# Must start with @
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "@Sirojiddin_Ibn_Baxtiyor")
+ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
 
 # Database configuration
-DB_FILE = "sales_bot.db"
+DB_FILE = os.getenv("DB_FILE", "sales_bot.db")
 
 # Default card number for payments
-DEFAULT_CARD = "9860 0803 6807 5935"
-DEFAULT_CARD_HOLDER = "SIROJBEK YULDOSHEV"
+DEFAULT_CARD = os.getenv("DEFAULT_CARD")
+DEFAULT_CARD_HOLDER = os.getenv("DEFAULT_CARD_HOLDER")
