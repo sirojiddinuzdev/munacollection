@@ -4291,3 +4291,1020 @@ task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home
 2026-06-17 23:03:35,361 - telegram.ext.Application - INFO - Application.stop() complete
 2026-06-17 23:03:35,386 - asyncio - ERROR - Task was destroyed but it is pending!
 task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:126> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-19 23:15:59,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:15:59,889 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:15:59,890 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:15:59,890 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:16:00,012 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:16:00,015 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:16:10,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:16:15,309 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:16:15,311 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781892975, 'message_id': 332, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033049}
+2026-06-19 23:16:15,828 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:16:20,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:16:20,977 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/admin', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781892980, 'message_id': 334, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033050}
+2026-06-19 23:16:21,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:16:31,105 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:16:41,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:16:51,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:01,561 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:11,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:21,907 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:32,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:42,236 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:17:52,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:18:02,576 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:18:12,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:18:22,918 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:18:30,140 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:18:30,142 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-19 23:18:30,142 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-19 23:18:30,168 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:126> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-19 23:18:54,377 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:18:54,645 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:18:54,646 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:18:54,646 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:18:54,782 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:18:54,786 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:19:05,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:19:15,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:19:25,411 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:19:35,534 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:19:45,667 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:19:51,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:19:51,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:19:51,237 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:19:51,237 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:19:51,360 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:19:51,364 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:19:52,130 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:19:52,132 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:19:56,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:19:56,264 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:19:57,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:19:57,403 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:02,042 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:02,044 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:03,676 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:03,678 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:05,911 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:20:05,914 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781893205, 'message_id': 336, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033051}
+2026-06-19 23:20:06,392 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:20:09,050 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:09,052 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:09,170 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:20:09,176 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Guruh havolasi 👥', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781893209, 'message_id': 338, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033052}
+2026-06-19 23:20:09,176 - messages - INFO - Message received from user_id=8270492933: state=None, text=Guruh havolasi 👥
+2026-06-19 23:20:09,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:20:10,193 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:10,194 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:14,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:14,419 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:16,427 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:16,429 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:21,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:21,067 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:23,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:23,462 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:28,872 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:28,874 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:32,415 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:32,417 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:35,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:35,917 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:42,934 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:42,936 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:48,397 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:48,398 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:20:56,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:20:56,395 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:21:04,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-19 23:21:04,372 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-19 23:21:14,388 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:21:16,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:21:16,137 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-19 23:21:16,137 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-19 23:21:16,162 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:126> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-19 23:21:24,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:21:35,383 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:21:45,516 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"

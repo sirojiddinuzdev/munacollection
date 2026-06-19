@@ -96,6 +96,15 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
         return True
 
+    # Guruh havolasi 👥
+    elif text == "Guruh havolasi 👥":
+        await update.message.reply_text(
+            f"👥 *Muna Collection guruhimiz havolasi:*\n\n"
+            f"Havola: https://t.me/munatest1",
+            parse_mode="Markdown"
+        )
+        return True
+
     # Default fallback
     else:
         await update.message.reply_text(

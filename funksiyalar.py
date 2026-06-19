@@ -20,11 +20,11 @@ def get_main_keyboard(user_id):
             [KeyboardButton("Elon Joylashtirish ➕"), KeyboardButton("Bozor 🛍")],
             [KeyboardButton("Buyurtmalar 📝"), KeyboardButton("Karta Raqami 💳")],
             [KeyboardButton("Yetkazilmagan buyurtmalar ⏳"), KeyboardButton("Yetkazilgan buyurtmalar ✅")],
-            [KeyboardButton("Statistika 📊")]
+            [KeyboardButton("Statistika 📊"), KeyboardButton("Guruh havolasi 👥")]
         ], resize_keyboard=True)
     else:
         return ReplyKeyboardMarkup([
-            [KeyboardButton("Bozor 🛍")],
+            [KeyboardButton("Bozor 🛍"), KeyboardButton("Guruh havolasi 👥")],
             [KeyboardButton("Aloqa 📞")]
         ], resize_keyboard=True)
 
