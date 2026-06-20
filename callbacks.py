@@ -194,37 +194,25 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
             photo_ids = photo.split(",")
             sent_msg_ids = []
             
-            if len(photo_ids) == 1:
+            # Always send only the first photo to the group with the caption and the inline button (Variant A)
+            main_photo = photo_ids[0] if photo_ids else None
+            if main_photo:
                 group_msg = await context.bot.send_photo(
                     chat_id=config.GROUP_ID,
-                    photo=photo_ids[0],
+                    photo=main_photo,
                     caption=group_text,
                     parse_mode="Markdown",
                     reply_markup=group_keyboard
                 )
                 sent_msg_ids.append(group_msg.message_id)
             else:
-                media = []
-                for idx, pid in enumerate(photo_ids):
-                    if idx == 0:
-                        media.append(InputMediaPhoto(media=pid, caption=group_text, parse_mode="Markdown"))
-                    else:
-                        media.append(InputMediaPhoto(media=pid))
-                
-                media_msgs = await context.bot.send_media_group(
+                group_msg = await context.bot.send_message(
                     chat_id=config.GROUP_ID,
-                    media=media
-                )
-                for m in media_msgs:
-                    sent_msg_ids.append(m.message_id)
-                
-                # Send the button message below it
-                btn_msg = await context.bot.send_message(
-                    chat_id=config.GROUP_ID,
-                    text=f"🛒 Sotib olish uchun quyidagi tugmani bosing:",
+                    text=group_text,
+                    parse_mode="Markdown",
                     reply_markup=group_keyboard
                 )
-                sent_msg_ids.append(btn_msg.message_id)
+                sent_msg_ids.append(group_msg.message_id)
             
             # Save the message ID(s) of the group post (as a comma-separated string)
             group_msg_ids_str = ",".join(str(mid) for mid in sent_msg_ids)

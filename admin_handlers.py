@@ -6,7 +6,8 @@ from datetime import datetime, timedelta
 from telegram import (
     Update,
     InlineKeyboardButton,
-    InlineKeyboardMarkup
+    InlineKeyboardMarkup,
+    InputMediaPhoto
 )
 from telegram.ext import ContextTypes
 import config
@@ -482,10 +483,17 @@ async def send_undelivered_orders_page(update: Update, context: ContextTypes.DEF
             [InlineKeyboardButton("Yetkazildi ✅", callback_data=f"deliver_order_{order['id']}")]
         ])
         
-        # Send first photo if available
+        # Send photo(s) if available
         photo_ids = [pid.strip() for pid in order['photo_id'].split(",") if pid.strip()]
         try:
-            if photo_ids:
+            if not photo_ids:
+                await context.bot.send_message(
+                    chat_id=chat_id,
+                    text=msg_text,
+                    parse_mode="Markdown",
+                    reply_markup=keyboard
+                )
+            elif len(photo_ids) == 1:
                 await context.bot.send_photo(
                     chat_id=chat_id,
                     photo=photo_ids[0],
@@ -494,6 +502,13 @@ async def send_undelivered_orders_page(update: Update, context: ContextTypes.DEF
                     reply_markup=keyboard
                 )
             else:
+                # Send as a media group
+                media = [InputMediaPhoto(media=pid) for pid in photo_ids]
+                await context.bot.send_media_group(
+                    chat_id=chat_id,
+                    media=media
+                )
+                # Send caption and keyboard
                 await context.bot.send_message(
                     chat_id=chat_id,
                     text=msg_text,

@@ -5,3 +5,4 @@ __pycache__/
 .env
 bot.log
 *.db
+*.log

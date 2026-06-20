@@ -1,7 +1,7 @@
 import logging
 import asyncio
 from datetime import datetime
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotCommand, InputMediaPhoto
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -98,7 +98,14 @@ async def check_and_notify_deadlines(bot):
             for admin_id in config.ADMIN_IDS:
                 try:
                     photo_ids = [pid.strip() for pid in order['photo_id'].split(",") if pid.strip()]
-                    if photo_ids:
+                    if not photo_ids:
+                        await bot.send_message(
+                            chat_id=admin_id,
+                            text=admin_msg_text,
+                            parse_mode="Markdown",
+                            reply_markup=keyboard
+                        )
+                    elif len(photo_ids) == 1:
                         await bot.send_photo(
                             chat_id=admin_id,
                             photo=photo_ids[0],
@@ -107,6 +114,13 @@ async def check_and_notify_deadlines(bot):
                             reply_markup=keyboard
                         )
                     else:
+                        # Send all photos as media group
+                        media = [InputMediaPhoto(media=pid) for pid in photo_ids]
+                        await bot.send_media_group(
+                            chat_id=admin_id,
+                            media=media
+                        )
+                        # Send text details and keyboard below it
                         await bot.send_message(
                             chat_id=admin_id,
                             text=admin_msg_text,

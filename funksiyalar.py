@@ -77,18 +77,60 @@ async def start_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE, pro
         f"Iltimos, to'lovni amalga oshiring va to'lov *chekini (skrinshot yoki rasm)* shu yerga yuboring."
     )
 
-    if update.message:
-        await update.message.reply_text(
-            text,
-            parse_mode="Markdown",
-            reply_markup=get_cancel_keyboard()
-        )
-    elif update.callback_query:
-        await update.callback_query.message.reply_text(
-            text,
-            parse_mode="Markdown",
-            reply_markup=get_cancel_keyboard()
-        )
+    # Send photo(s) if available
+    photo_list = [pid.strip() for pid in product['photo_id'].split(",") if pid.strip()]
+    msg_ids = []
+    
+    try:
+        if not photo_list:
+            msg = await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text=text,
+                parse_mode="Markdown",
+                reply_markup=get_cancel_keyboard()
+            )
+            msg_ids.append(msg.message_id)
+        elif len(photo_list) == 1:
+            msg = await context.bot.send_photo(
+                chat_id=update.effective_chat.id,
+                photo=photo_list[0],
+                caption=text,
+                parse_mode="Markdown",
+                reply_markup=get_cancel_keyboard()
+            )
+            msg_ids.append(msg.message_id)
+        else:
+            # Send media group
+            media = [InputMediaPhoto(media=pid) for pid in photo_list]
+            media_msgs = await context.bot.send_media_group(
+                chat_id=update.effective_chat.id,
+                media=media
+            )
+            for m in media_msgs:
+                msg_ids.append(m.message_id)
+                
+            # Send text description and keyboard
+            msg = await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text=text,
+                parse_mode="Markdown",
+                reply_markup=get_cancel_keyboard()
+            )
+            msg_ids.append(msg.message_id)
+            
+        context.user_data['catalog_msg_ids'] = msg_ids
+    except Exception as e:
+        logger.error(f"Error sending photos during checkout: {e}")
+        try:
+            msg = await context.bot.send_message(
+                chat_id=update.effective_chat.id,
+                text=text,
+                parse_mode="Markdown",
+                reply_markup=get_cancel_keyboard()
+            )
+            context.user_data['catalog_msg_ids'] = [msg.message_id]
+        except Exception:
+            pass
 
 # Catalog / Bozor flow
 async def show_catalog(update: Update, context: ContextTypes.DEFAULT_TYPE, index=0, photo_index=0):
@@ -235,37 +277,25 @@ async def update_group_post_after_edit(context: ContextTypes.DEFAULT_TYPE, produ
         photo_ids = product['photo_id'].split(",")
         sent_msg_ids = []
         
-        if len(photo_ids) == 1:
+        # Always send only the first photo to the group with the caption and the inline button (Variant A)
+        main_photo = photo_ids[0] if photo_ids else None
+        if main_photo:
             group_msg = await context.bot.send_photo(
                 chat_id=config.GROUP_ID,
-                photo=photo_ids[0],
+                photo=main_photo,
                 caption=new_caption,
                 parse_mode="Markdown",
                 reply_markup=group_keyboard
             )
             sent_msg_ids.append(group_msg.message_id)
         else:
-            media = []
-            for idx, pid in enumerate(photo_ids):
-                if idx == 0:
-                    media.append(InputMediaPhoto(media=pid, caption=new_caption, parse_mode="Markdown"))
-                else:
-                    media.append(InputMediaPhoto(media=pid))
-            
-            media_msgs = await context.bot.send_media_group(
+            group_msg = await context.bot.send_message(
                 chat_id=config.GROUP_ID,
-                media=media
-            )
-            for m in media_msgs:
-                sent_msg_ids.append(m.message_id)
-            
-            # Send the button message below it
-            btn_msg = await context.bot.send_message(
-                chat_id=config.GROUP_ID,
-                text=f"🛒 Sotib olish uchun quyidagi tugmani bosing:",
+                text=new_caption,
+                parse_mode="Markdown",
                 reply_markup=group_keyboard
             )
-            sent_msg_ids.append(btn_msg.message_id)
+            sent_msg_ids.append(group_msg.message_id)
         
         group_msg_ids_str = ",".join(str(mid) for mid in sent_msg_ids)
         db.update_product_field(product_id, 'group_message_id', group_msg_ids_str)

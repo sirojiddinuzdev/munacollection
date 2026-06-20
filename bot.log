@@ -5308,3 +5308,504 @@ task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home
 2026-06-19 23:21:24,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
 2026-06-19 23:21:35,383 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
 2026-06-19 23:21:45,516 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:30:20,757 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:30:20,891 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:30:20,892 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:30:20,892 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:30:21,046 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:30:21,049 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:30:31,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:30:41,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:30:51,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:01,899 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:12,033 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:22,192 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:32,320 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:42,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:31:52,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:33:18,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:33:18,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:33:18,673 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:33:18,674 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:33:18,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:33:18,798 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:33:29,157 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:33:39,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:33:49,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:33:59,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:35:26,062 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-19 23:35:26,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-19 23:35:26,268 - __main__ - INFO - Bot commands successfully set.
+2026-06-19 23:35:26,268 - __main__ - INFO - Deadline checker background task started.
+2026-06-19 23:35:26,416 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-19 23:35:26,419 - telegram.ext.Application - INFO - Application started
+2026-06-19 23:35:36,905 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:35:38,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:35:38,970 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781894138, 'message_id': 340, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033053}
+2026-06-19 23:35:39,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:35:49,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:35:50,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:35:50,396 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Bozor 🛍', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781894149, 'message_id': 342, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033054}
+2026-06-19 23:35:50,396 - messages - INFO - Message received from user_id=8270492933: state=None, text=Bozor 🛍
+2026-06-19 23:35:51,618 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-19 23:35:51,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-19 23:36:00,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:36:11,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-19 23:36:11,071 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-19 23:36:11,072 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-19 23:36:11,098 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() done, defined at /home/sirojiddin/code/Munacollection/main.py:119> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-20 23:16:11,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-20 23:16:12,018 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-20 23:16:12,019 - __main__ - INFO - Bot commands successfully set.
+2026-06-20 23:16:12,019 - __main__ - INFO - Deadline checker background task started.
+2026-06-20 23:16:12,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-20 23:16:12,160 - telegram.ext.Application - INFO - Application started
+2026-06-20 23:16:22,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:23,896 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:23,899 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979383, 'message_id': 347, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033055}
+2026-06-20 23:16:24,355 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:16:29,030 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:29,033 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Guruh havolasi 👥', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979388, 'message_id': 349, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033056}
+2026-06-20 23:16:29,033 - messages - INFO - Message received from user_id=8270492933: state=None, text=Guruh havolasi 👥
+2026-06-20 23:16:29,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:16:39,174 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:49,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:54,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:16:54,961 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Elon Joylashtirish ➕', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979414, 'message_id': 351, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033057}
+2026-06-20 23:16:54,961 - messages - INFO - Message received from user_id=8270492933: state=None, text=Elon Joylashtirish ➕
+2026-06-20 23:16:55,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:17:05,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:13,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:13,087 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'media_group_id': '14255835463662770', 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADcwADPAQ', 'file_size': 1606, 'file_unique_id': 'AQADeBhrGx2_uUl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADbQADPAQ', 'file_size': 30506, 'file_unique_id': 'AQADeBhrGx2_uUly'}, {'height': 640, 'width': 640, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADeAADPAQ', 'file_size': 93586, 'file_unique_id': 'AQADeBhrGx2_uUl9'}], 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979432, 'message_id': 353, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033058}
+2026-06-20 23:17:13,087 - messages - INFO - Message received from user_id=8270492933: state=AD_PHOTO, text=None
+2026-06-20 23:17:13,087 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'media_group_id': '14255835463662770', 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkBAAIBYmo22ShkCYwNfYsXN4Iy7oFiHaKIAAJ5GGsbHb-5SRKiSSbz7WDJAQADAgADcwADPAQ', 'file_size': 846, 'file_unique_id': 'AQADeRhrGx2_uUl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkBAAIBYmo22ShkCYwNfYsXN4Iy7oFiHaKIAAJ5GGsbHb-5SRKiSSbz7WDJAQADAgADbQADPAQ', 'file_size': 8746, 'file_unique_id': 'AQADeRhrGx2_uUly'}, {'height': 640, 'width': 640, 'file_id': 'AgACAgIAAxkBAAIBYmo22ShkCYwNfYsXN4Iy7oFiHaKIAAJ5GGsbHb-5SRKiSSbz7WDJAQADAgADeAADPAQ', 'file_size': 20770, 'file_unique_id': 'AQADeRhrGx2_uUl9'}], 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979432, 'message_id': 354, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033059}
+2026-06-20 23:17:13,088 - messages - INFO - Message received from user_id=8270492933: state=AD_PHOTO, text=None
+2026-06-20 23:17:16,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:17:23,242 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:33,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:43,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:48,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:48,857 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Marsdan keladi💫', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979468, 'message_id': 356, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033060}
+2026-06-20 23:17:48,858 - messages - INFO - Message received from user_id=8270492933: state=AD_LOCATION, text=Marsdan keladi💫
+2026-06-20 23:17:49,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:17:53,914 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:17:53,916 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '2yil', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979473, 'message_id': 358, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033061}
+2026-06-20 23:17:53,916 - messages - INFO - Message received from user_id=8270492933: state=AD_DELIVERY, text=2yil
+2026-06-20 23:17:54,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:18:04,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:05,872 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:05,874 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '9mlrd$', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979485, 'message_id': 360, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033062}
+2026-06-20 23:18:05,874 - messages - INFO - Message received from user_id=8270492933: state=AD_PRICE, text=9mlrd$
+2026-06-20 23:18:06,345 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:18:16,044 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:16,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:16,483 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Balo', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979496, 'message_id': 362, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033063}
+2026-06-20 23:18:16,488 - messages - INFO - Message received from user_id=8270492933: state=AD_DESCRIPTION, text=Balo
+2026-06-20 23:18:16,998 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:18:21,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:21,191 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'ad_publish', 'id': '7851380559970283140', 'message': {'caption': "📦 E'lon Preview:\n\n📍 Kelish joyi: Marsdan keladi💫\n⏱ Kelish muddati: 2yil\n💵 Narxi: 9mlrd$\n📝 Izoh: Balo\n🖼 Jami rasmlar: 2 ta\n\nUshbu e'lonni chop etishni xohlaysizmi?", 'caption_entities': [{'length': 14, 'offset': 3, 'type': <MessageEntityType.BOLD>}], 'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADcwADPAQ', 'file_size': 1606, 'file_unique_id': 'AQADeBhrGx2_uUl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADbQADPAQ', 'file_size': 30506, 'file_unique_id': 'AQADeBhrGx2_uUly'}, {'height': 640, 'width': 640, 'file_id': 'AgACAgIAAxkBAAIBYWo22SjP2SIasEqRBEEQ8hJcVUtoAAJ4GGsbHb-5SUklWtG3y1lfAQADAgADeAADPAQ', 'file_size': 93586, 'file_unique_id': 'AQADeBhrGx2_uUl9'}], 'reply_markup': {'inline_keyboard': [[{'callback_data': 'ad_publish', 'text': 'Chop etish 🚀'}, {'callback_data': 'ad_cancel', 'text': 'Bekor qilish ❌'}]]}, 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979496, 'message_id': 363, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033064}
+2026-06-20 23:18:21,191 - callbacks - INFO - Callback query received: user_id=8270492933, data=ad_publish
+2026-06-20 23:18:21,335 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:18:21,337 - callbacks - INFO - ad_publish callback triggered. user_data keys: ['state', 'new_ad_photo', 'new_ad_location', 'new_ad_delivery', 'new_ad_price', 'new_ad_description']
+2026-06-20 23:18:21,337 - callbacks - INFO - ad_publish details: photo=True, location=Marsdan keladi💫, delivery=2yil, price=9mlrd$, description=Balo
+2026-06-20 23:18:21,484 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-20 23:18:21,871 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-20 23:18:22,039 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:18:22,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:18:22,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-20 23:18:22,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:18:31,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:41,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:18:51,631 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:01,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:11,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:22,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:26,176 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:26,178 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start buy_4', 'chat': {'first_name': 'Ghost', 'id': 7844532860, 'type': <ChatType.PRIVATE>}, 'date': 1781979566, 'message_id': 365, 'from': {'first_name': 'Ghost', 'id': 7844532860, 'is_bot': False, 'language_code': 'uz'}}, 'update_id': 63033065}
+2026-06-20 23:19:26,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:19:36,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:44,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:19:44,960 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADcwADPAQ', 'file_size': 771, 'file_unique_id': 'AQAD3xdrG1NmiEl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADbQADPAQ', 'file_size': 4833, 'file_unique_id': 'AQAD3xdrG1NmiEly'}, {'height': 640, 'width': 640, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADeAADPAQ', 'file_size': 10612, 'file_unique_id': 'AQAD3xdrG1NmiEl9'}], 'supergroup_chat_created': False, 'chat': {'first_name': 'Ghost', 'id': 7844532860, 'type': <ChatType.PRIVATE>}, 'date': 1781979584, 'message_id': 367, 'from': {'first_name': 'Ghost', 'id': 7844532860, 'is_bot': False, 'language_code': 'uz'}}, 'update_id': 63033066}
+2026-06-20 23:19:44,960 - messages - INFO - Message received from user_id=7844532860: state=BUY_RECEIPT, text=None
+2026-06-20 23:19:45,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:19:45,704 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:19:45,944 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:19:55,105 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:05,246 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:15,384 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:25,523 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:31,228 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:31,230 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'order_app_3', 'id': '7851380561622717656', 'message': {'caption': '🔔 YANGI BUYURTMA #3!\n\n👤 Xaridor: Mavjud emas (ID: 7844532860)\n📞 Telefon: +998952442256\n\n📦 Mahsulot:\n- ID: 4\n- Joyi: Marsdan keladi💫\n- Narxi: 9mlrd$\n- Izohi: Balo', 'caption_entities': [{'length': 13, 'offset': 76, 'type': <MessageEntityType.PHONE_NUMBER>}], 'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADcwADPAQ', 'file_size': 771, 'file_unique_id': 'AQAD3xdrG1NmiEl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADbQADPAQ', 'file_size': 4833, 'file_unique_id': 'AQAD3xdrG1NmiEly'}, {'height': 640, 'width': 640, 'file_id': 'AgACAgIAAxkBAAIBb2o22cDARCJQRJxSZX1I2-6eoh8OAALfF2sbU2aISdDowDuQdGwhAQADAgADeAADPAQ', 'file_size': 10612, 'file_unique_id': 'AQAD3xdrG1NmiEl9'}], 'reply_markup': {'inline_keyboard': [[{'callback_data': 'order_app_3', 'text': 'Tasdiqlash ✅'}, {'callback_data': 'order_rej_3', 'text': 'Rad etish ❌'}]]}, 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979585, 'message_id': 369, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033067}
+2026-06-20 23:20:31,230 - callbacks - INFO - Callback query received: user_id=8270492933, data=order_app_3
+2026-06-20 23:20:32,469 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:20:32,625 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-20 23:20:32,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:20:41,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:46,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:20:46,113 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Yetkazilmagan buyurtmalar ⏳', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979646, 'message_id': 372, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033068}
+2026-06-20 23:20:46,113 - messages - INFO - Message received from user_id=8270492933: state=None, text=Yetkazilmagan buyurtmalar ⏳
+2026-06-20 23:20:47,039 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:20:47,206 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:20:47,930 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:20:56,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:06,414 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:16,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:26,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:36,850 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:46,993 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:21:57,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:07,264 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:17,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:27,546 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:37,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:47,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:22:57,977 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:08,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:18,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:28,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:38,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:48,695 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:23:58,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:24:08,982 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:24:19,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:24:29,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,282 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,284 - __main__ - INFO - Bot commands successfully set.
+2026-06-20 23:24:35,284 - __main__ - INFO - Deadline checker background task started.
+2026-06-20 23:24:35,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,645 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,699 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,703 - telegram.ext.Application - INFO - Application started
+2026-06-20 23:24:35,838 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-20 23:24:35,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:24:36,078 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-20 23:24:36,080 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-20 23:24:40,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-20 23:24:40,240 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-20 23:24:41,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 409 Conflict"
+2026-06-20 23:24:41,374 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-20 23:24:53,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:03,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:13,307 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:23,461 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:33,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:43,794 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:53,926 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:54,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:54,385 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'extend_order_3', 'id': '7851380561439134362', 'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 24, 'offset': 3, 'type': <MessageEntityType.BOLD>}, {'length': 11, 'offset': 64, 'type': <MessageEntityType.BOLD>}, {'length': 13, 'offset': 112, 'type': <MessageEntityType.PHONE_NUMBER>}, {'length': 9, 'offset': 157, 'type': <MessageEntityType.BOLD>}], 'group_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'callback_data': 'deliver_order_3', 'text': 'Ha, yetkazildi ✅'}], [{'callback_data': 'extend_order_3', 'text': "Yo'q, muddatni uzaytirish ⏱"}]]}, 'supergroup_chat_created': False, 'text': '🚨 BUYURTMA OGOHLANTIRISHI!\n⏳ MUDDAT TUGASHIGA 3 KUN QOLDI!\n\n📋 Buyurtma #3\n👤 Xaridor: Mavjud emas\n📞 Telefon: +998952442256\n⏱ Muddat: 2026-06-22 23:20\n\n📦 Mahsulot:\n- Joyi: Marsdan keladi💫\n- Narxi: 9mlrd$\n- Izohi: Balo\n\nUshbu buyurtma yetkazildimi?', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979875, 'message_id': 378, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033069}
+2026-06-20 23:25:54,385 - callbacks - INFO - Callback query received: user_id=8270492933, data=extend_order_3
+2026-06-20 23:25:54,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageReplyMarkup "HTTP/1.1 200 OK"
+2026-06-20 23:25:54,994 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:25:58,437 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:25:58,439 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'ext_days_14_3', 'id': '7851380560811560364', 'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'edit_date': 1781979954, 'entities': [{'length': 24, 'offset': 3, 'type': <MessageEntityType.BOLD>}, {'length': 11, 'offset': 64, 'type': <MessageEntityType.BOLD>}, {'length': 13, 'offset': 112, 'type': <MessageEntityType.PHONE_NUMBER>}, {'length': 9, 'offset': 157, 'type': <MessageEntityType.BOLD>}], 'group_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'callback_data': 'ext_days_3_3', 'text': '3 kun 🗓'}, {'callback_data': 'ext_days_7_3', 'text': '7 kun 🗓'}], [{'callback_data': 'ext_days_14_3', 'text': '14 kun 🗓'}], [{'callback_data': 'cancel_deliv_3', 'text': 'Orqaga ⬅️'}]]}, 'supergroup_chat_created': False, 'text': '🚨 BUYURTMA OGOHLANTIRISHI!\n⏳ MUDDAT TUGASHIGA 3 KUN QOLDI!\n\n📋 Buyurtma #3\n👤 Xaridor: Mavjud emas\n📞 Telefon: +998952442256\n⏱ Muddat: 2026-06-22 23:20\n\n📦 Mahsulot:\n- Joyi: Marsdan keladi💫\n- Narxi: 9mlrd$\n- Izohi: Balo\n\nUshbu buyurtma yetkazildimi?', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979875, 'message_id': 378, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033070}
+2026-06-20 23:25:58,439 - callbacks - INFO - Callback query received: user_id=8270492933, data=ext_days_14_3
+2026-06-20 23:25:58,578 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 400 Bad Request"
+2026-06-20 23:25:58,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageText "HTTP/1.1 200 OK"
+2026-06-20 23:25:58,882 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:26:04,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:04,293 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'deliver_order_1', 'id': '7851380559953688310', 'message': {'caption': '📋 BUYURTMA #1\n\n👤 Xaridor: Mavjud emas\n📞 Telefon: +998952442256\n📅 Qabul qilingan: 2026-06-16 00:00:56\n⏱ Yetkazilishi kerak: 2026-07-04 00:00\n⏳ Muddat: 13 kun, 0 soat qoldi\n\n📦 Mahsulot parametrlari:\n- Joyi: xitoydan\n- Narxi: 19\n- Izohi: bu textbgnsfjdmka', 'caption_entities': [{'length': 11, 'offset': 3, 'type': <MessageEntityType.BOLD>}, {'length': 13, 'offset': 52, 'type': <MessageEntityType.PHONE_NUMBER>}, {'length': 22, 'offset': 179, 'type': <MessageEntityType.BOLD>}], 'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3MAAzwE', 'file_size': 1348, 'file_unique_id': 'AQADLyJrGxNugUl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA20AAzwE', 'file_size': 13122, 'file_unique_id': 'AQADLyJrGxNugUly'}, {'height': 800, 'width': 800, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3gAAzwE', 'file_size': 51800, 'file_unique_id': 'AQADLyJrGxNugUl9'}, {'height': 1280, 'width': 1280, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3kAAzwE', 'file_size': 96924, 'file_unique_id': 'AQADLyJrGxNugUl-'}], 'reply_markup': {'inline_keyboard': [[{'callback_data': 'deliver_order_1', 'text': 'Yetkazildi ✅'}]]}, 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979647, 'message_id': 375, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033071}
+2026-06-20 23:26:04,293 - callbacks - INFO - Callback query received: user_id=8270492933, data=deliver_order_1
+2026-06-20 23:26:04,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageReplyMarkup "HTTP/1.1 200 OK"
+2026-06-20 23:26:04,838 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:26:08,990 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:08,992 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'confirm_deliv_1', 'id': '7851380560295902644', 'message': {'caption': '📋 BUYURTMA #1\n\n👤 Xaridor: Mavjud emas\n📞 Telefon: +998952442256\n📅 Qabul qilingan: 2026-06-16 00:00:56\n⏱ Yetkazilishi kerak: 2026-07-04 00:00\n⏳ Muddat: 13 kun, 0 soat qoldi\n\n📦 Mahsulot parametrlari:\n- Joyi: xitoydan\n- Narxi: 19\n- Izohi: bu textbgnsfjdmka', 'caption_entities': [{'length': 11, 'offset': 3, 'type': <MessageEntityType.BOLD>}, {'length': 13, 'offset': 52, 'type': <MessageEntityType.PHONE_NUMBER>}, {'length': 22, 'offset': 179, 'type': <MessageEntityType.BOLD>}], 'channel_chat_created': False, 'delete_chat_photo': False, 'edit_date': 1781979964, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 90, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3MAAzwE', 'file_size': 1348, 'file_unique_id': 'AQADLyJrGxNugUl4'}, {'height': 320, 'width': 320, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA20AAzwE', 'file_size': 13122, 'file_unique_id': 'AQADLyJrGxNugUly'}, {'height': 800, 'width': 800, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3gAAzwE', 'file_size': 51800, 'file_unique_id': 'AQADLyJrGxNugUl9'}, {'height': 1280, 'width': 1280, 'file_id': 'AgACAgIAAxkDAAIBBGoy10mp3aIqYKwCTjOiF3ZqkiWIAAIvImsbE26BSSJ-SF5sacMAAQEAAwIAA3kAAzwE', 'file_size': 96924, 'file_unique_id': 'AQADLyJrGxNugUl-'}], 'reply_markup': {'inline_keyboard': [[{'callback_data': 'confirm_deliv_1', 'text': 'Ishonchim komil ✅'}], [{'callback_data': 'cancel_deliv_1', 'text': 'Orqaga ⬅️'}]]}, 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781979647, 'message_id': 375, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033072}
+2026-06-20 23:26:08,993 - callbacks - INFO - Callback query received: user_id=8270492933, data=confirm_deliv_1
+2026-06-20 23:26:09,150 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-20 23:26:09,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:26:09,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:26:19,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:29,289 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:39,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:49,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:55,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:26:55,269 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-20 23:26:55,269 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-20 23:26:55,296 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:126> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-20 23:26:59,616 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-20 23:26:59,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-20 23:26:59,770 - __main__ - INFO - Bot commands successfully set.
+2026-06-20 23:26:59,770 - __main__ - INFO - Deadline checker background task started.
+2026-06-20 23:26:59,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-20 23:26:59,906 - telegram.ext.Application - INFO - Application started
+2026-06-20 23:27:10,336 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:27:20,470 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:27:30,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:27:40,734 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:27:50,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:01,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:11,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:21,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:31,409 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:41,537 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:28:51,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:01,803 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:11,936 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:22,063 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:32,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:42,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:29:52,453 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:02,582 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:12,712 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:22,837 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:32,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:43,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:30:53,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:03,359 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:13,494 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:23,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:33,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:43,910 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:31:54,049 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:04,182 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:14,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:24,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:34,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:44,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:32:54,864 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:05,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:15,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:25,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:35,411 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:45,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:33:55,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:05,810 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:15,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:26,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:36,204 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:46,343 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:34:56,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:06,619 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:16,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:26,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:37,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:47,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:35:57,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:07,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:17,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:27,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:37,883 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:48,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:36:58,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:08,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:18,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:28,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:38,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:48,782 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:37:58,907 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:09,046 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:19,172 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:29,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:39,456 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:49,590 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:56,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:38:56,681 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Elon Joylashtirish ➕', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980736, 'message_id': 383, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033073}
+2026-06-20 23:38:56,682 - messages - INFO - Message received from user_id=8270492933: state=None, text=Elon Joylashtirish ➕
+2026-06-20 23:38:57,217 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:04,624 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:04,626 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 51, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADcwADPAQ', 'file_size': 1276, 'file_unique_id': 'AQADnBhrGx2_uUl4'}, {'height': 320, 'width': 180, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADbQADPAQ', 'file_size': 14629, 'file_unique_id': 'AQADnBhrGx2_uUly'}, {'height': 800, 'width': 450, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADeAADPAQ', 'file_size': 55453, 'file_unique_id': 'AQADnBhrGx2_uUl9'}, {'height': 1280, 'width': 720, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADeQADPAQ', 'file_size': 124957, 'file_unique_id': 'AQADnBhrGx2_uUl-'}, {'height': 1920, 'width': 1080, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADdwADPAQ', 'file_size': 202818, 'file_unique_id': 'AQADnBhrGx2_uUl8'}], 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980744, 'message_id': 385, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033074}
+2026-06-20 23:39:04,626 - messages - INFO - Message received from user_id=8270492933: state=AD_PHOTO, text=None
+2026-06-20 23:39:08,043 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:14,755 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:15,732 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:15,733 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': "Do'kondan", 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980755, 'message_id': 387, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033075}
+2026-06-20 23:39:15,733 - messages - INFO - Message received from user_id=8270492933: state=AD_LOCATION, text=Do'kondan
+2026-06-20 23:39:16,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:23,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:23,473 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '1 kun', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980763, 'message_id': 389, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033076}
+2026-06-20 23:39:23,473 - messages - INFO - Message received from user_id=8270492933: state=AD_DELIVERY, text=1 kun
+2026-06-20 23:39:23,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:31,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:31,286 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '10k', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980771, 'message_id': 391, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033077}
+2026-06-20 23:39:31,286 - messages - INFO - Message received from user_id=8270492933: state=AD_PRICE, text=10k
+2026-06-20 23:39:31,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:35,985 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:35,987 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Ayron', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980775, 'message_id': 393, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033078}
+2026-06-20 23:39:35,987 - messages - INFO - Message received from user_id=8270492933: state=AD_DESCRIPTION, text=Ayron
+2026-06-20 23:39:36,178 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:39:40,183 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:39:40,186 - messages - INFO - RAW UPDATE: {'callback_query': {'chat_instance': '3000672466049168352', 'data': 'ad_publish', 'id': '7851380562185417351', 'message': {'caption': "📦 E'lon Preview:\n\n📍 Kelish joyi: Do'kondan\n⏱ Kelish muddati: 1 kun\n💵 Narxi: 10k\n📝 Izoh: Ayron\n🖼 Jami rasmlar: 1 ta\n\nUshbu e'lonni chop etishni xohlaysizmi?", 'caption_entities': [{'length': 14, 'offset': 3, 'type': <MessageEntityType.BOLD>}], 'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'photo': [{'height': 90, 'width': 51, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADcwADPAQ', 'file_size': 1276, 'file_unique_id': 'AQADnBhrGx2_uUl4'}, {'height': 320, 'width': 180, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADbQADPAQ', 'file_size': 14629, 'file_unique_id': 'AQADnBhrGx2_uUly'}, {'height': 800, 'width': 450, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADeAADPAQ', 'file_size': 55453, 'file_unique_id': 'AQADnBhrGx2_uUl9'}, {'height': 1280, 'width': 720, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADeQADPAQ', 'file_size': 124957, 'file_unique_id': 'AQADnBhrGx2_uUl-'}, {'height': 1920, 'width': 1080, 'file_id': 'AgACAgIAAxkBAAIBgWo23kgN7njroosKDGtyZkh6k-aGAAKcGGsbHb-5Se0IpMAFegOkAQADAgADdwADPAQ', 'file_size': 202818, 'file_unique_id': 'AQADnBhrGx2_uUl8'}], 'reply_markup': {'inline_keyboard': [[{'callback_data': 'ad_publish', 'text': 'Chop etish 🚀'}, {'callback_data': 'ad_cancel', 'text': 'Bekor qilish ❌'}]]}, 'supergroup_chat_created': False, 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980776, 'message_id': 394, 'from': {'first_name': 'Muna Collection test', 'id': 8657142758, 'is_bot': True, 'username': 'fevrallik_noiloj_bot'}}, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033079}
+2026-06-20 23:39:40,186 - callbacks - INFO - Callback query received: user_id=8270492933, data=ad_publish
+2026-06-20 23:39:40,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:39:40,368 - callbacks - INFO - ad_publish callback triggered. user_data keys: ['state', 'new_ad_photo', 'new_ad_location', 'new_ad_delivery', 'new_ad_price', 'new_ad_description']
+2026-06-20 23:39:40,368 - callbacks - INFO - ad_publish details: photo=True, location=Do'kondan, delivery=1 kun, price=10k, description=Ayron
+2026-06-20 23:39:40,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-20 23:39:40,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-20 23:39:40,863 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:41,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-20 23:39:41,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-20 23:39:50,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:00,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:05,374 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:05,376 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'entities': [{'length': 6, 'offset': 0, 'type': <MessageEntityType.BOT_COMMAND>}], 'group_chat_created': False, 'supergroup_chat_created': False, 'text': '/start buy_5', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980805, 'message_id': 396, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'uz', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033080}
+2026-06-20 23:40:05,857 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:40:15,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:25,633 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:35,765 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:45,902 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:40:56,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:06,176 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:16,305 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:26,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:36,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:41,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:41:41,646 - messages - INFO - RAW UPDATE: {'message': {'channel_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'text': 'Bekor qilish ❌', 'chat': {'first_name': 'Sirojiddin', 'id': 8270492933, 'type': <ChatType.PRIVATE>, 'username': 'Sirojiddin_Ibn_Baxtiyor'}, 'date': 1781980901, 'message_id': 398, 'from': {'first_name': 'Sirojiddin', 'id': 8270492933, 'is_bot': False, 'language_code': 'en', 'username': 'Sirojiddin_Ibn_Baxtiyor'}}, 'update_id': 63033081}
+2026-06-20 23:41:41,646 - messages - INFO - Message received from user_id=8270492933: state=BUY_RECEIPT, text=Bekor qilish ❌
+2026-06-20 23:41:42,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-20 23:41:51,779 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-20 23:42:01,907 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
