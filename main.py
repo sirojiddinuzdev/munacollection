@@ -174,7 +174,7 @@ def main():
 
     # Run
     print("Bot polling rejimida ishga tushmoqda...")
-    application.run_polling(allowed_updates=Update.ALL_TYPES)
+    application.run_polling(allowed_updates=Update.ALL_TYPES, concurrent_updates=True)
 
 if __name__ == "__main__":
     main()

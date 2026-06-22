@@ -9,7 +9,11 @@ class Database:
         self.init_db()
 
     def _get_connection(self):
-        conn = sqlite3.connect(self.db_file)
+        conn = sqlite3.connect(self.db_file, timeout=20.0)
+        conn.execute("PRAGMA journal_mode = WAL;")
+        conn.execute("PRAGMA synchronous = NORMAL;")
+        conn.execute("PRAGMA cache_size = 10000;")
+        conn.execute("PRAGMA temp_store = MEMORY;")
         conn.row_factory = sqlite3.Row  # Access columns by name
         return conn
 

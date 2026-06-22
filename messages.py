@@ -70,6 +70,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def log_all_updates(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
-        logger.info(f"RAW UPDATE: {update.to_dict()}")
+        user_id = update.effective_user.id if update.effective_user else "System/Group"
+        if update.message:
+            logger.info(f"Update: Msg from user {user_id}: {update.message.text or '[Media/No text]'}")
+        elif update.callback_query:
+            logger.info(f"Update: Callback from user {user_id}: {update.callback_query.data}")
+        else:
+            logger.info(f"Update ID {update.update_id}: Type {type(update).__name__}")
     except Exception as e:
-        logger.error(f"Error logging raw update: {e}")
+        logger.error(f"Error logging update summary: {e}")
