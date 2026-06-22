@@ -2,6 +2,7 @@ import logging
 from telegram import Update
 from telegram.ext import ContextTypes
 import config
+from database import db
 from registratsiya import is_authorized, request_registration, handle_contact
 from funksiyalar import get_main_keyboard
 from admin_handlers import handle_admin_message
@@ -60,7 +61,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     # Route to admin handlers if user is admin
-    if user_id in config.ADMIN_IDS:
+    if db.is_admin(user_id):
         handled = await handle_admin_message(update, context)
         if handled:
             return

@@ -95,7 +95,7 @@ async def check_and_notify_deadlines(bot):
                 [InlineKeyboardButton("Yo'q, muddatni uzaytirish ⏱", callback_data=f"extend_order_{order['id']}")]
             ])
             
-            for admin_id in config.ADMIN_IDS:
+            for admin_id in db.get_all_admin_ids():
                 try:
                     photo_ids = [pid.strip() for pid in order['photo_id'].split(",") if pid.strip()]
                     if not photo_ids:
@@ -159,7 +159,7 @@ def main():
         return
 
     # Build Application
-    application = Application.builder().token(config.BOT_TOKEN).post_init(post_init).build()
+    application = Application.builder().token(config.BOT_TOKEN).post_init(post_init).concurrent_updates(True).build()
 
     # Global Logger Handler
     application.add_handler(TypeHandler(Update, log_all_updates), group=-1)
@@ -174,7 +174,7 @@ def main():
 
     # Run
     print("Bot polling rejimida ishga tushmoqda...")
-    application.run_polling(allowed_updates=Update.ALL_TYPES, concurrent_updates=True)
+    application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == "__main__":
     main()

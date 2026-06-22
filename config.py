@@ -12,6 +12,9 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_IDS_STR = os.getenv("ADMIN_IDS")
 ADMIN_IDS = [int(x.strip()) for x in ADMIN_IDS_STR.split(",") if x.strip()]
 
+# Super Admin ID (the owner of the bot, typically the first admin ID in the list)
+SUPER_ADMIN_ID = int(os.getenv("SUPER_ADMIN_ID", ADMIN_IDS[0] if ADMIN_IDS else 0))
+
 # Telegram Group Chat ID where the ads will be posted.
 GROUP_ID = int(os.getenv("GROUP_ID"))
 

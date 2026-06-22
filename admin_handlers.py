@@ -16,7 +16,8 @@ from funksiyalar import (
     get_main_keyboard,
     get_cancel_keyboard,
     update_group_post_after_edit,
-    show_catalog
+    show_catalog,
+    get_super_admin_keyboard
 )
 
 logger = logging.getLogger(__name__)
@@ -27,7 +28,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
     state = context.user_data.get('state')
 
     # Ensure user is admin
-    if user_id not in config.ADMIN_IDS:
+    if not db.is_admin(user_id):
         return False
 
     # --- ADMIN STATES ---
@@ -210,6 +211,59 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
             await show_catalog(update, context, index=0)
             return True
 
+    elif state == 'SUPER_ADD_ADMIN':
+        if not text or not text.isdigit():
+            await update.message.reply_text("Iltimos, faqat foydalanuvchining sonli Telegram ID raqamini yuboring:")
+            return True
+        
+        new_admin_id = int(text)
+        if db.is_admin(new_admin_id):
+            await update.message.reply_text("Ushbu foydalanuvchi allaqachon admin!", reply_markup=get_super_admin_keyboard())
+            context.user_data['state'] = None
+            return True
+        
+        db.add_admin(new_admin_id)
+        context.user_data['state'] = None
+        await update.message.reply_text(
+            f"Yangi admin muvaffaqiyatli qo'shildi! ✅\nID: `{new_admin_id}`",
+            parse_mode="Markdown",
+            reply_markup=get_super_admin_keyboard()
+        )
+        return True
+
+    elif state == 'SUPER_DEL_ADMIN':
+        if not text or not text.isdigit():
+            await update.message.reply_text("Iltimos, faqat o'chirmoqchi bo'lgan adminning Telegram ID raqamini yuboring:")
+            return True
+        
+        del_admin_id = int(text)
+        
+        if del_admin_id in config.ADMIN_IDS:
+            await update.message.reply_text(
+                "Tizim adminini (static admin) o'chirib bo'lmaydi! Uni faqat .env faylidan o'chirish mumkin.",
+                reply_markup=get_super_admin_keyboard()
+            )
+            context.user_data['state'] = None
+            return True
+            
+        db_admins = [a['user_id'] for a in db.get_db_admins()]
+        if del_admin_id not in db_admins:
+            await update.message.reply_text(
+                "Ushbu ID dinamik adminlar ro'yxatida topilmadi.",
+                reply_markup=get_super_admin_keyboard()
+            )
+            context.user_data['state'] = None
+            return True
+        
+        db.remove_admin(del_admin_id)
+        context.user_data['state'] = None
+        await update.message.reply_text(
+            f"Admin muvaffaqiyatli o'chirildi! ❌\nID: `{del_admin_id}`",
+            parse_mode="Markdown",
+            reply_markup=get_super_admin_keyboard()
+        )
+        return True
+
     # --- ADMIN MENU NAVIGATION ---
     
     # Elon Joylashtirish ➕
@@ -381,6 +435,78 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
                     )
             except Exception as e:
                 logger.error(f"Error listing delivered order {order['id']}: {e}")
+        return True
+
+    # --- SUPER ADMIN MENU NAVIGATION ---
+    elif text == "Super Admin 👑" and user_id == config.SUPER_ADMIN_ID:
+        await update.message.reply_text(
+            "👑 *Super Admin paneliga xush kelibsiz!*\n\n"
+            "Quyidagi tugmalar orqali adminlarni boshqarishingiz mumkin:",
+            parse_mode="Markdown",
+            reply_markup=get_super_admin_keyboard()
+        )
+        return True
+
+    elif text == "Adminlar ro'yxati 📋" and user_id == config.SUPER_ADMIN_ID:
+        static_admins = config.ADMIN_IDS
+        db_admins_list = db.get_db_admins()
+        
+        msg = "📋 *Bot Administratorlari Ro'yxati:*\n\n"
+        msg += "*Tizim adminlari (static, .env):*\n"
+        for idx, uid in enumerate(static_admins):
+            user = db.get_user(uid)
+            username_str = f" (@{user['username']})" if user and user['username'] else ""
+            msg += f"{idx+1}. `{uid}`{username_str}\n"
+            
+        if db_admins_list:
+            msg += "\n*Dinamik adminlar (bazadan):*\n"
+            for idx, adm in enumerate(db_admins_list):
+                username_str = f" (@{adm['username']})" if adm['username'] else ""
+                msg += f"{idx+1}. `{adm['user_id']}`{username_str} — qo'shilgan: {adm['added_at']}\n"
+        else:
+            msg += "\n*Dinamik adminlar yo'q.*"
+            
+        await update.message.reply_text(msg, parse_mode="Markdown", reply_markup=get_super_admin_keyboard())
+        return True
+
+    elif text == "Admin qo'shish ➕" and user_id == config.SUPER_ADMIN_ID:
+        context.user_data['state'] = 'SUPER_ADD_ADMIN'
+        await update.message.reply_text(
+            "Qo'shmoqchi bo'lgan yangi adminning Telegram *User ID* (faqat raqamlardan iborat) raqamini yuboring:\n\n"
+            "Masalan: `123456789`\n"
+            "(User ID ni aniqlash uchun @userinfobot botidan foydalanish mumkin)",
+            parse_mode="Markdown",
+            reply_markup=get_cancel_keyboard()
+        )
+        return True
+
+    elif text == "Admin o'chirish ❌" and user_id == config.SUPER_ADMIN_ID:
+        db_admins_list = db.get_db_admins()
+        if not db_admins_list:
+            await update.message.reply_text(
+                "Bazada dinamik qo'shilgan adminlar mavjud emas.",
+                reply_markup=get_super_admin_keyboard()
+            )
+            return True
+            
+        context.user_data['state'] = 'SUPER_DEL_ADMIN'
+        msg = "O'chirmoqchi bo'lgan adminning Telegram *User ID* raqamini kiriting:\n\n"
+        for idx, adm in enumerate(db_admins_list):
+            username_str = f" (@{adm['username']})" if adm['username'] else ""
+            msg += f"- `{adm['user_id']}`{username_str}\n"
+            
+        await update.message.reply_text(
+            msg,
+            parse_mode="Markdown",
+            reply_markup=get_cancel_keyboard()
+        )
+        return True
+
+    elif text == "Orqaga ⬅️" and user_id == config.SUPER_ADMIN_ID:
+        await update.message.reply_text(
+            "Asosiy menyuga qaytdingiz.",
+            reply_markup=get_main_keyboard(user_id)
+        )
         return True
 
     return False

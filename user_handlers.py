@@ -68,7 +68,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
             ]
         ])
 
-        for admin_id in config.ADMIN_IDS:
+        for admin_id in db.get_all_admin_ids():
             try:
                 await context.bot.send_photo(
                     chat_id=admin_id,

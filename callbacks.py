@@ -56,7 +56,7 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
         return
 
     # --- ADMIN CALLBACKS ---
-    if user_id not in config.ADMIN_IDS:
+    if not db.is_admin(user_id):
         await query.answer("Siz admin emassiz!", show_alert=True)
         return
 

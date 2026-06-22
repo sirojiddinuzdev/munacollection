@@ -68,6 +68,14 @@ class Database:
                 )
             """)
             
+            # Admins table (dynamic admin lists)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS admins (
+                    user_id INTEGER PRIMARY KEY,
+                    added_at TEXT
+                )
+            """)
+            
             # Add new columns to orders if not exist
             try:
                 cursor.execute("ALTER TABLE orders ADD COLUMN approved_at TEXT")
@@ -259,6 +267,58 @@ class Database:
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute("INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?)", (key, str(value)))
+            conn.commit()
+
+    # Dynamic Admin management
+    def is_admin(self, user_id):
+        if user_id in config.ADMIN_IDS:
+            return True
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT 1 FROM admins WHERE user_id = ?", (user_id,))
+                return cursor.fetchone() is not None
+        except sqlite3.OperationalError:
+            return False
+
+    def get_all_admin_ids(self):
+        admin_ids = list(config.ADMIN_IDS)
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT user_id FROM admins")
+                for row in cursor.fetchall():
+                    uid = row[0]
+                    if uid not in admin_ids:
+                        admin_ids.append(uid)
+        except sqlite3.OperationalError:
+            pass
+        return admin_ids
+
+    def get_db_admins(self):
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("""
+                    SELECT a.user_id, a.added_at, u.username, u.phone_number 
+                    FROM admins a
+                    LEFT JOIN users u ON a.user_id = u.user_id
+                """)
+                return [dict(row) for row in cursor.fetchall()]
+        except sqlite3.OperationalError:
+            return []
+
+    def add_admin(self, user_id):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            added_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            cursor.execute("INSERT OR REPLACE INTO admins (user_id, added_at) VALUES (?, ?)", (user_id, added_at))
+            conn.commit()
+
+    def remove_admin(self, user_id):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM admins WHERE user_id = ?", (user_id,))
             conn.commit()
 
 # Expose global database instance

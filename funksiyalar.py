@@ -15,18 +15,27 @@ logger = logging.getLogger(__name__)
 
 # Keyboards
 def get_main_keyboard(user_id):
-    if user_id in config.ADMIN_IDS:
-        return ReplyKeyboardMarkup([
+    if db.is_admin(user_id):
+        buttons = [
             [KeyboardButton("Elon Joylashtirish ➕"), KeyboardButton("Bozor 🛍")],
             [KeyboardButton("Buyurtmalar 📝"), KeyboardButton("Karta Raqami 💳")],
             [KeyboardButton("Yetkazilmagan buyurtmalar ⏳"), KeyboardButton("Yetkazilgan buyurtmalar ✅")],
             [KeyboardButton("Statistika 📊"), KeyboardButton("Guruh havolasi 👥")]
-        ], resize_keyboard=True)
+        ]
+        if user_id == config.SUPER_ADMIN_ID:
+            buttons.append([KeyboardButton("Super Admin 👑")])
+        return ReplyKeyboardMarkup(buttons, resize_keyboard=True)
     else:
         return ReplyKeyboardMarkup([
             [KeyboardButton("Bozor 🛍"), KeyboardButton("Guruh havolasi 👥")],
             [KeyboardButton("Aloqa 📞")]
         ], resize_keyboard=True)
+
+def get_super_admin_keyboard():
+    return ReplyKeyboardMarkup([
+        [KeyboardButton("Admin qo'shish ➕"), KeyboardButton("Admin o'chirish ❌")],
+        [KeyboardButton("Adminlar ro'yxati 📋"), KeyboardButton("Orqaga ⬅️")]
+    ], resize_keyboard=True)
 
 def get_register_keyboard():
     return ReplyKeyboardMarkup([

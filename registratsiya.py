@@ -6,7 +6,7 @@ from funksiyalar import get_register_keyboard, get_main_keyboard, start_checkout
 
 async def is_authorized(update: Update, context: ContextTypes.DEFAULT_TYPE) -> bool:
     user_id = update.effective_user.id
-    if user_id in config.ADMIN_IDS:
+    if db.is_admin(user_id):
         return True
     if db.is_user_registered(user_id):
         return True
