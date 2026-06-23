@@ -53,13 +53,22 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
                 photos = user_data_ref.pop('new_ad_photos', [])
                 user_data_ref.pop('last_photo_time', None)
                 user_data_ref['new_ad_photo'] = ",".join(photos)
-                user_data_ref['state'] = 'AD_LOCATION'
+                user_data_ref['state'] = 'AD_NAME'
                 await context.bot.send_message(
                     chat_id=chat_id,
-                    text=f"Rasm(lar) qabul qilindi: {len(photos)} ta rasm. ✅\nMahsulot qayerdan kelishini yozing:"
+                    text=f"Rasm(lar) qabul qilindi: {len(photos)} ta rasm. ✅\nMahsulot nomini kiriting:"
                 )
                 
         asyncio.create_task(process_photos_after_delay(context.user_data, update.effective_chat.id, current_time))
+        return True
+
+    elif state == 'AD_NAME':
+        if not text:
+            await update.message.reply_text("Iltimos, mahsulot nomini matn ko'rinishida yuboring.")
+            return True
+        context.user_data['new_ad_name'] = text
+        context.user_data['state'] = 'AD_LOCATION'
+        await update.message.reply_text("Mahsulot qayerdan kelishini yozing (kelish joyi):")
         return True
 
     elif state == 'AD_LOCATION':
@@ -101,6 +110,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
         preview_photo = photo_ids[0]
         preview_text = (
             f"📦 *E'lon Preview:*\n\n"
+            f"🏷 Nomi: {context.user_data['new_ad_name']}\n"
             f"📍 Kelish joyi: {context.user_data['new_ad_location']}\n"
             f"⏱ Kelish muddati: {context.user_data['new_ad_delivery']}\n"
             f"💵 Narxi: {context.user_data['new_ad_price']}\n"
@@ -211,6 +221,19 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
             await show_catalog(update, context, index=0)
             return True
 
+    elif state == 'EDIT_GROUP_LINK':
+        if not text or not (text.startswith("http://") or text.startswith("https://") or text.startswith("t.me/")):
+            await update.message.reply_text("Iltimos, to'g'ri havola yuboring (masalan, https://t.me/...).")
+            return True
+            
+        db.set_setting('group_link', text)
+        context.user_data['state'] = None
+        await update.message.reply_text(
+            f"Guruh havolasi muvaqqiyatli yangilandi! ✅\n\nHavola: {text}",
+            reply_markup=get_main_keyboard(user_id)
+        )
+        return True
+
     elif state == 'SUPER_ADD_ADMIN':
         if not text or not text.isdigit():
             await update.message.reply_text("Iltimos, faqat foydalanuvchining sonli Telegram ID raqamini yuboring:")
@@ -296,6 +319,20 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
         )
         return True
 
+    # Guruh havolasi 👥
+    elif text == "Guruh havolasi 👥":
+        group_link = db.get_setting('group_link', 'https://t.me/munatest1')
+        keyboard = InlineKeyboardMarkup([
+            [InlineKeyboardButton("Havolani o'zgartirish ✏️", callback_data="change_group_link")]
+        ])
+        await update.message.reply_text(
+            f"👥 *Hozirgi guruh havolasi:*\n\n"
+            f"Havola: {group_link}",
+            parse_mode="Markdown",
+            reply_markup=keyboard
+        )
+        return True
+
     # Statistika 📊
     elif text == "Statistika 📊":
         with db._get_connection() as conn:
@@ -344,7 +381,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
             cursor.execute("""
                 SELECT o.id, o.user_id, o.product_id, o.receipt_photo_id, 
                        u.username, u.phone_number,
-                       p.location, p.price, p.description
+                       p.name, p.location, p.price, p.description
                 FROM orders o
                 JOIN users u ON o.user_id = u.user_id
                 JOIN products p ON o.product_id = p.id
@@ -368,6 +405,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
                 f"📞 Telefon: {order['phone_number']}\n\n"
                 f"📦 Mahsulot:\n"
                 f"- ID: {order['product_id']}\n"
+                f"- Nomi: {order['name'] or 'Nomsiz'}\n"
                 f"- Joyi: {order['location']}\n"
                 f"- Narxi: {order['price']}\n"
                 f"- Izohi: {order['description']}"
@@ -415,6 +453,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
                 f"📅 Qabul qilingan: {order['approved_at'] or order['created_at']}\n"
                 f"🚚 Yetkazib berilgan: {order['delivered_at']}\n\n"
                 f"📦 *Mahsulot parametrlari:*\n"
+                f"- Nomi: {order['name'] or 'Nomsiz'}\n"
                 f"- Joyi: {order['location']}\n"
                 f"- Narxi: {order['price']}\n"
                 f"- Izohi: {order['description']}"
@@ -600,6 +639,7 @@ async def send_undelivered_orders_page(update: Update, context: ContextTypes.DEF
             f"⏱ Yetkazilishi kerak: {deadline_formatted}\n"
             f"{time_status}\n\n"
             f"📦 *Mahsulot parametrlari:*\n"
+            f"- Nomi: {order['name'] or 'Nomsiz'}\n"
             f"- Joyi: {order['location']}\n"
             f"- Narxi: {order['price']}\n"
             f"- Izohi: {order['description']}"

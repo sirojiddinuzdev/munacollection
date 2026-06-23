@@ -48,6 +48,13 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
         await show_catalog(update, context, index=index)
         return
 
+    # Clear Search filter
+    if data == "clear_search":
+        await query.answer()
+        context.user_data.pop('search_query', None)
+        await show_catalog(update, context, index=0)
+        return
+
     # Buy Product trigger from within the bot catalog
     if data.startswith("buy_prod_"):
         product_id = int(data.split("_")[2])
@@ -66,7 +73,8 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
         await query.answer()
         
         keyboard = [
-            [InlineKeyboardButton("Rasm 🖼", callback_data=f"edit_f_photo_id_{product_id}")],
+            [InlineKeyboardButton("Nomi 🏷", callback_data=f"edit_f_name_{product_id}"),
+             InlineKeyboardButton("Rasm 🖼", callback_data=f"edit_f_photo_id_{product_id}")],
             [InlineKeyboardButton("Kelish Joyi 📍", callback_data=f"edit_f_location_{product_id}"),
              InlineKeyboardButton("Kelish Muddati ⏱", callback_data=f"edit_f_delivery_time_{product_id}")],
             [InlineKeyboardButton("Narxi 💵", callback_data=f"edit_f_price_{product_id}"),
@@ -91,6 +99,7 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
         context.user_data['edit_field'] = field
         
         field_names_uz = {
+            'name': "mahsulot nomini",
             'photo_id': "mahsulot rasmini (rasm ko'rinishida)",
             'location': "kelish joyini",
             'delivery_time': "kelish muddatini",
@@ -155,26 +164,27 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
     # Publish Ad Confirmed
     if data == "ad_publish":
         await query.answer()
-        logger.info(f"ad_publish callback triggered. user_data keys: {list(context.user_data.keys())}")
         # Retrieve ad details
+        name = context.user_data.pop('new_ad_name', None)
         photo = context.user_data.pop('new_ad_photo', None)
         location = context.user_data.pop('new_ad_location', None)
         delivery = context.user_data.pop('new_ad_delivery', None)
         price = context.user_data.pop('new_ad_price', None)
         description = context.user_data.pop('new_ad_description', None)
         context.user_data['state'] = None
-        logger.info(f"ad_publish details: photo={bool(photo)}, location={location}, delivery={delivery}, price={price}, description={description}")
+        logger.info(f"ad_publish details: name={name}, photo={bool(photo)}, location={location}, delivery={delivery}, price={price}, description={description}")
         
-        if not all([photo, location, delivery, price, description]):
+        if not all([name, photo, location, delivery, price, description]):
             await query.message.reply_text("Xato: Elon ma'lumotlari to'liq emas, iltimos qaytadan boshlang.")
             return
 
         # 1. Insert into Database first to get the Product ID
-        product_id = db.add_product(photo, location, delivery, price, description)
+        product_id = db.add_product(name, photo, location, delivery, price, description)
 
         # 2. Format group message
         group_text = (
             f"🛍 *YANGI MAHSULOT!*\n\n"
+            f"🏷 Nomi: {name}\n"
             f"📍 Kelish joyi: {location}\n"
             f"⏱ Kelish muddati: {delivery}\n"
             f"💵 Narxi: {price}\n\n"
@@ -236,6 +246,7 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
     # Cancel Ad Publish
     if data == "ad_cancel":
         await query.answer("E'lon bekor qilindi")
+        context.user_data.pop('new_ad_name', None)
         context.user_data.pop('new_ad_photo', None)
         context.user_data.pop('new_ad_location', None)
         context.user_data.pop('new_ad_delivery', None)
@@ -245,6 +256,16 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
         
         await query.message.reply_text("E'lon bekor qilindi. ❌", reply_markup=get_main_keyboard(user_id))
         await query.message.delete()
+
+    # Change Group Link Trigger (Callback from group link view)
+    if data == "change_group_link":
+        await query.answer()
+        context.user_data['state'] = 'EDIT_GROUP_LINK'
+        await query.message.reply_text(
+            "Iltimos, yangi guruh havolasini kiriting (masalan, https://t.me/...):",
+            reply_markup=get_cancel_keyboard()
+        )
+        return
 
     # Change Card Trigger (Callback from card view)
     if data == "change_card":
@@ -290,6 +311,7 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
             f"📞 Telefon: {order['phone_number']}\n\n"
             f"📦 Mahsulot:\n"
             f"- ID: {order['product_id']}\n"
+            f"- Nomi: {order['name'] or 'Nomsiz'}\n"
             f"- Joyi: {order['location']}\n"
             f"- Narxi: {order['price']}\n"
             f"- Izohi: {order['description']}"

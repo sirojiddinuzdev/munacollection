@@ -18,7 +18,7 @@ def get_main_keyboard(user_id):
     if db.is_admin(user_id):
         buttons = [
             [KeyboardButton("Elon Joylashtirish ➕"), KeyboardButton("Bozor 🛍")],
-            [KeyboardButton("Buyurtmalar 📝"), KeyboardButton("Karta Raqami 💳")],
+            [KeyboardButton("Qidiruv 🔍"), KeyboardButton("Buyurtmalar 📝")],
             [KeyboardButton("Yetkazilmagan buyurtmalar ⏳"), KeyboardButton("Yetkazilgan buyurtmalar ✅")],
             [KeyboardButton("Statistika 📊"), KeyboardButton("Guruh havolasi 👥")]
         ]
@@ -27,8 +27,8 @@ def get_main_keyboard(user_id):
         return ReplyKeyboardMarkup(buttons, resize_keyboard=True)
     else:
         return ReplyKeyboardMarkup([
-            [KeyboardButton("Bozor 🛍"), KeyboardButton("Guruh havolasi 👥")],
-            [KeyboardButton("Aloqa 📞")]
+            [KeyboardButton("Bozor 🛍"), KeyboardButton("Qidiruv 🔍")],
+            [KeyboardButton("Guruh havolasi 👥"), KeyboardButton("Aloqa 📞")]
         ], resize_keyboard=True)
 
 def get_super_admin_keyboard():
@@ -77,6 +77,7 @@ async def start_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE, pro
 
     text = (
         f"🛒 *Mahsulot sotib olish:*\n\n"
+        f"🏷 Nomi: {product.get('name') or 'Nomsiz'}\n"
         f"📍 Kelish joyi: {product['location']}\n"
         f"💵 Narxi: {product['price']}\n"
         f"📝 Izoh: {product['description']}\n\n"
@@ -142,14 +143,26 @@ async def start_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE, pro
             pass
 
 # Catalog / Bozor flow
-async def show_catalog(update: Update, context: ContextTypes.DEFAULT_TYPE, index=0, photo_index=0):
-    products = db.get_active_products()
+async def show_catalog(update: Update, context: ContextTypes.DEFAULT_TYPE, index=0, search_query=None):
+    if search_query is not None:
+        context.user_data['search_query'] = search_query
+    else:
+        search_query = context.user_data.get('search_query')
+
+    if search_query:
+        products = db.search_products(search_query)
+    else:
+        products = db.get_active_products()
+
     if not products:
-        msg = "Hozircha bozorda hech qanday e'lon yo'q."
+        if search_query:
+            msg = f"Kechirasiz, \"{search_query}\" kalit so'ziga mos mahsulot topilmadi."
+        else:
+            msg = "Hozircha bozorda hech qanday e'lon yo'q."
         if update.message:
             await update.message.reply_text(msg)
         elif update.callback_query:
-            await update.callback_query.answer("Bozor bo'sh")
+            await update.callback_query.answer("Natija topilmadi")
             await update.callback_query.message.reply_text(msg)
         return
 
@@ -176,8 +189,12 @@ async def show_catalog(update: Update, context: ContextTypes.DEFAULT_TYPE, index
     photo_list = [pid.strip() for pid in product['photo_id'].split(",") if pid.strip()]
 
     # Construct description text
+    title_text = f"🔍 Qidiruv natijasi ({index+1}/{total})" if search_query else f"🛍 Bozor mahsuloti ({index+1}/{total})"
     caption = (
-        f"🛍 *Bozor mahsuloti ({index+1}/{total})*\n\n"
+        f"*{title_text}*\n"
+        f"🔎 Kalit so'z: \"{search_query}\"\n\n" if search_query else ""
+    ) + (
+        f"🏷 Nomi: {product.get('name') or 'Nomsiz'}\n"
         f"📍 Kelish joyi: {product['location']}\n"
         f"⏱ Kelish muddati: {product['delivery_time']}\n"
         f"💵 Narxi: {product['price']}\n"
@@ -199,8 +216,12 @@ async def show_catalog(update: Update, context: ContextTypes.DEFAULT_TYPE, index
         nav_row.append(InlineKeyboardButton("Keyingi Mahsulot ➡️", callback_data=f"cat_idx_{index+1}"))
     keyboard.append(nav_row)
 
-    # 3. Admin controls
-    if user_id in config.ADMIN_IDS:
+    # 3. Clear search button (if filtering)
+    if search_query:
+        keyboard.append([InlineKeyboardButton("Barcha mahsulotlar 🛍", callback_data="clear_search")])
+
+    # 4. Admin controls
+    if db.is_admin(user_id):
         keyboard.append([
             InlineKeyboardButton("Tahrirlash ✏️", callback_data=f"admin_edit_{product['id']}"),
             InlineKeyboardButton("O'chirish ❌", callback_data=f"admin_del_{product['id']}")
@@ -271,6 +292,7 @@ async def update_group_post_after_edit(context: ContextTypes.DEFAULT_TYPE, produ
     # Post new content
     new_caption = (
         f"🛍 *YANGI MAHSULOT!* (Tahrirlangan)\n\n"
+        f"🏷 Nomi: {product.get('name') or 'Nomsiz'}\n"
         f"📍 Kelish joyi: {product['location']}\n"
         f"⏱ Kelish muddati: {product['delivery_time']}\n"
         f"💵 Narxi: {product['price']}\n\n"

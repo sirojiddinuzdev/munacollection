@@ -34,7 +34,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
 
     # Normal start
-    if user_id in config.ADMIN_IDS:
+    if db.is_admin(user_id):
         await update.message.reply_text(
             "Xush kelibsiz, Admin! Quyidagi menyudan foydalanishingiz mumkin:",
             reply_markup=get_main_keyboard(user_id)

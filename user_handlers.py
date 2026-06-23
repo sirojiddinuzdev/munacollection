@@ -17,6 +17,37 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
 
     # --- USER STATES ---
     
+    # 0. Search product state
+    if state == 'SEARCH_PRODUCT':
+        if not text:
+            await update.message.reply_text("Iltimos, qidiruv uchun matn kiriting.")
+            return True
+            
+        # Clean up catalog messages if any
+        prev_msg_ids = context.user_data.get('catalog_msg_ids', [])
+        if prev_msg_ids:
+            for mid in prev_msg_ids:
+                try:
+                    await context.bot.delete_message(chat_id=update.effective_chat.id, message_id=mid)
+                except Exception as e:
+                    logger.error(f"Could not delete message {mid}: {e}")
+            context.user_data['catalog_msg_ids'] = []
+
+        products = db.search_products(text)
+        if not products:
+            from funksiyalar import get_cancel_keyboard
+            await update.message.reply_text(
+                f"Kechirasiz, \"{text}\" so'ziga mos mahsulotlar topilmadi. 🤷‍♂️\n"
+                f"Boshqa kalit so'z kiriting yoki bekor qiling:",
+                reply_markup=get_cancel_keyboard()
+            )
+            return True
+            
+        # If found, clear state and show catalog with search results
+        context.user_data['state'] = None
+        await show_catalog(update, context, index=0, search_query=text)
+        return True
+
     # 1. Buy flow receipt upload state
     if state == 'BUY_RECEIPT':
         if not update.message.photo:
@@ -56,6 +87,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
             f"📞 Telefon: {buyer_user['phone_number']}\n\n"
             f"📦 Mahsulot:\n"
             f"- ID: {product['id']}\n"
+            f"- Nomi: {product.get('name') or 'Nomsiz'}\n"
             f"- Joyi: {product['location']}\n"
             f"- Narxi: {product['price']}\n"
             f"- Izohi: {product['description']}"
@@ -84,7 +116,18 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
     
     # Bozor 🛍
     if text == "Bozor 🛍":
+        context.user_data.pop('search_query', None)
         await show_catalog(update, context, index=0)
+        return True
+
+    # Qidiruv 🔍
+    elif text == "Qidiruv 🔍":
+        context.user_data['state'] = 'SEARCH_PRODUCT'
+        from funksiyalar import get_cancel_keyboard
+        await update.message.reply_text(
+            "🔍 Qidirmoqchi bo'lgan mahsulot nomi, izohi yoki joylashuvini kiriting:",
+            reply_markup=get_cancel_keyboard()
+        )
         return True
 
     # Aloqa 📞
@@ -98,9 +141,10 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
 
     # Guruh havolasi 👥
     elif text == "Guruh havolasi 👥":
+        group_link = db.get_setting('group_link', 'https://t.me/munatest1')
         await update.message.reply_text(
             f"👥 *Muna Collection guruhimiz havolasi:*\n\n"
-            f"Havola: https://t.me/munatest1",
+            f"Havola: {group_link}",
             parse_mode="Markdown"
         )
         return True

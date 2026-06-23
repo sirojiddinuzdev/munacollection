@@ -47,20 +47,22 @@ async def check_and_notify_deadlines(bot):
         total_seconds_left = time_left.total_seconds()
         days_left_exact = total_seconds_left / 86400.0
         
-        last_notified = order.get('last_notified_days_left', -1)
+        last_notified = order.get('last_notified_days_left')
         if last_notified is None:
-            last_notified = -1
+            last_notified = 999  # 999 means never notified
             
         notify_milestone = None
         milestone_text = ""
         
-        if days_left_exact <= 0 and last_notified != 0:
-            notify_milestone = 0
+        if days_left_exact <= 0:
             overdue_days = int(abs(days_left_exact))
-            if overdue_days == 0:
-                milestone_text = "🚨 BUGUN YETKAZIB BERISH MUDDATI TUGADI!"
-            else:
-                milestone_text = f"🚨 YETKAZIB BERISH MUDDATI {overdue_days} KUN O'TIB KETDI!"
+            expected_milestone = -overdue_days if overdue_days >= 1 else 0
+            if last_notified != expected_milestone:
+                notify_milestone = expected_milestone
+                if overdue_days == 0:
+                    milestone_text = "🚨 BUGUN YETKAZIB BERISH MUDDATI TUGADI!"
+                else:
+                    milestone_text = f"🚨 YETKAZIB BERISH MUDDATI {overdue_days} KUN O'TIB KETDI!"
                 
         elif days_left_exact <= 1.0 and days_left_exact > 0 and last_notified != 1:
             notify_milestone = 1
@@ -154,8 +156,8 @@ async def post_init(application: Application) -> None:
 
 def main():
     # Verify TOKEN
-    if config.BOT_TOKEN == "YOUR_BOT_TOKEN_HERE":
-        print("ILTIMOS: main.py-ni ishga tushirishdan oldin config.py fayliga bot tokenini kiritganingizga ishonch hosil qiling!")
+    if not config.BOT_TOKEN or config.BOT_TOKEN == "YOUR_BOT_TOKEN_HERE":
+        print("ILTIMOS: main.py-ni ishga tushirishdan oldin .env fayliga bot tokenini (BOT_TOKEN) kiriting!")
         return
 
     # Build Application

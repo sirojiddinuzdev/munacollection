@@ -6764,3 +6764,47 @@ task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home
 2026-06-22 23:11:30,794 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
 2026-06-22 23:11:40,988 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
 2026-06-22 23:11:51,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:27:39,433 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-23 23:27:39,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-23 23:27:39,557 - __main__ - INFO - Bot commands successfully set.
+2026-06-23 23:27:39,557 - __main__ - INFO - Deadline checker background task started.
+2026-06-23 23:27:39,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-23 23:27:39,664 - telegram.ext.Application - INFO - Application started
+2026-06-23 23:27:49,980 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:00,096 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:08,174 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:08,176 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-23 23:28:08,529 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:28:13,883 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:13,885 - messages - INFO - Update: Msg from user 8270492933: Super Admin 👑
+2026-06-23 23:28:13,886 - messages - INFO - Message received from user_id=8270492933: state=None, text=Super Admin 👑
+2026-06-23 23:28:14,228 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:28:19,934 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:19,936 - messages - INFO - Update: Msg from user 8270492933: Adminlar ro'yxati 📋
+2026-06-23 23:28:19,936 - messages - INFO - Message received from user_id=8270492933: state=None, text=Adminlar ro'yxati 📋
+2026-06-23 23:28:20,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:28:30,045 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:40,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:44,172 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:28:44,175 - messages - INFO - Update: Msg from user 7844532860: /start
+2026-06-23 23:28:44,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:28:54,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:04,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:10,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:10,797 - messages - INFO - Update: Msg from user 7844532860: Elon Joylashtirish ➕
+2026-06-23 23:29:10,797 - messages - INFO - Message received from user_id=7844532860: state=None, text=Elon Joylashtirish ➕
+2026-06-23 23:29:11,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:29:16,513 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:16,514 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-23 23:29:16,514 - messages - INFO - Message received from user_id=7844532860: state=AD_PHOTO, text=None
+2026-06-23 23:29:19,933 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:29:23,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:23,301 - messages - INFO - Update: Msg from user 7844532860: Bekor qilish ❌
+2026-06-23 23:29:23,301 - messages - INFO - Message received from user_id=7844532860: state=AD_NAME, text=Bekor qilish ❌
+2026-06-23 23:29:23,438 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-23 23:29:33,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:41,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-23 23:29:41,096 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-23 23:29:41,096 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-23 23:29:41,124 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:142> wait_for=<Future pending cb=[Task.task_wakeup()]>>

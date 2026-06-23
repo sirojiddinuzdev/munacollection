@@ -33,6 +33,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if text == "Bekor qilish ❌":
         context.user_data['state'] = None
         # Clean any draft states
+        context.user_data.pop('new_ad_name', None)
         context.user_data.pop('new_ad_photo', None)
         context.user_data.pop('new_ad_photos', None)
         context.user_data.pop('new_ad_location', None)
@@ -43,6 +44,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context.user_data.pop('edit_product_id', None)
         context.user_data.pop('edit_field', None)
         context.user_data.pop('edit_photos', None)
+        context.user_data.pop('search_query', None)
         
         # Clean catalog messages if any
         prev_msg_ids = context.user_data.get('catalog_msg_ids', [])

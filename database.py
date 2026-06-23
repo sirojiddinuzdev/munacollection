@@ -6,6 +6,7 @@ import config
 class Database:
     def __init__(self, db_file):
         self.db_file = db_file
+        self._admin_cache = None
         self.init_db()
 
     def _get_connection(self):
@@ -94,7 +95,30 @@ class Database:
             except sqlite3.OperationalError:
                 pass
             
+            # Create indexes for optimization
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(status)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_orders_user_id ON orders(user_id)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_orders_product_id ON orders(product_id)")
+            cursor.execute("CREATE INDEX IF NOT EXISTS idx_products_status ON products(status)")
+
+            try:
+                cursor.execute("ALTER TABLE products ADD COLUMN name TEXT")
+            except sqlite3.OperationalError:
+                pass
+            
             conn.commit()
+
+    def _load_admin_cache(self):
+        admin_ids = set()
+        try:
+            with self._get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT user_id FROM admins")
+                for row in cursor.fetchall():
+                    admin_ids.add(row[0])
+        except sqlite3.OperationalError:
+            pass
+        self._admin_cache = admin_ids
 
     # User management
     def add_user(self, user_id, username, phone_number):
@@ -119,14 +143,14 @@ class Database:
         return user is not None
 
     # Product/Ad management
-    def add_product(self, photo_id, location, delivery_time, price, description, group_message_id=None):
+    def add_product(self, name, photo_id, location, delivery_time, price, description, group_message_id=None):
         with self._get_connection() as conn:
             cursor = conn.cursor()
             created_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             cursor.execute(
-                """INSERT INTO products (photo_id, location, delivery_time, price, description, group_message_id, created_at)
-                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                (photo_id, location, delivery_time, price, description, group_message_id, created_at)
+                """INSERT INTO products (name, photo_id, location, delivery_time, price, description, group_message_id, created_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                (name, photo_id, location, delivery_time, price, description, group_message_id, created_at)
             )
             conn.commit()
             return cursor.lastrowid
@@ -152,7 +176,7 @@ class Database:
             conn.commit()
 
     def update_product_field(self, product_id, field, value):
-        valid_fields = ['photo_id', 'location', 'delivery_time', 'price', 'description', 'group_message_id']
+        valid_fields = ['name', 'photo_id', 'location', 'delivery_time', 'price', 'description', 'group_message_id']
         if field not in valid_fields:
             raise ValueError(f"Invalid field name: {field}")
         with self._get_connection() as conn:
@@ -177,7 +201,7 @@ class Database:
             cursor = conn.cursor()
             cursor.execute("""
                 SELECT o.*, u.username, u.phone_number, 
-                       p.location, p.delivery_time, p.price, p.description
+                       p.name, p.location, p.delivery_time, p.price, p.description
                 FROM orders o
                 JOIN users u ON o.user_id = u.user_id
                 JOIN products p ON o.product_id = p.id
@@ -196,7 +220,7 @@ class Database:
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute(
-                "UPDATE orders SET status = 'approved', approved_at = ?, delivery_deadline = ?, last_notified_days_left = -1 WHERE id = ?",
+                "UPDATE orders SET status = 'approved', approved_at = ?, delivery_deadline = ?, last_notified_days_left = NULL WHERE id = ?",
                 (approved_at, delivery_deadline, order_id)
             )
             conn.commit()
@@ -214,7 +238,7 @@ class Database:
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute(
-                "UPDATE orders SET delivery_deadline = ?, last_notified_days_left = -1 WHERE id = ?",
+                "UPDATE orders SET delivery_deadline = ?, last_notified_days_left = NULL WHERE id = ?",
                 (new_deadline, order_id)
             )
             conn.commit()
@@ -230,7 +254,7 @@ class Database:
             cursor = conn.cursor()
             cursor.execute("""
                 SELECT o.*, u.username, u.phone_number, 
-                       p.location, p.delivery_time, p.price, p.description, p.photo_id
+                       p.name, p.location, p.delivery_time, p.price, p.description, p.photo_id
                 FROM orders o
                 JOIN users u ON o.user_id = u.user_id
                 JOIN products p ON o.product_id = p.id
@@ -245,7 +269,7 @@ class Database:
             cursor = conn.cursor()
             cursor.execute("""
                 SELECT o.*, u.username, u.phone_number, 
-                       p.location, p.delivery_time, p.price, p.description, p.photo_id
+                       p.name, p.location, p.delivery_time, p.price, p.description, p.photo_id
                 FROM orders o
                 JOIN users u ON o.user_id = u.user_id
                 JOIN products p ON o.product_id = p.id
@@ -273,27 +297,14 @@ class Database:
     def is_admin(self, user_id):
         if user_id in config.ADMIN_IDS:
             return True
-        try:
-            with self._get_connection() as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT 1 FROM admins WHERE user_id = ?", (user_id,))
-                return cursor.fetchone() is not None
-        except sqlite3.OperationalError:
-            return False
+        if self._admin_cache is None:
+            self._load_admin_cache()
+        return user_id in self._admin_cache
 
     def get_all_admin_ids(self):
-        admin_ids = list(config.ADMIN_IDS)
-        try:
-            with self._get_connection() as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT user_id FROM admins")
-                for row in cursor.fetchall():
-                    uid = row[0]
-                    if uid not in admin_ids:
-                        admin_ids.append(uid)
-        except sqlite3.OperationalError:
-            pass
-        return admin_ids
+        if self._admin_cache is None:
+            self._load_admin_cache()
+        return list(config.ADMIN_IDS) + list(self._admin_cache)
 
     def get_db_admins(self):
         try:
@@ -314,12 +325,28 @@ class Database:
             added_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             cursor.execute("INSERT OR REPLACE INTO admins (user_id, added_at) VALUES (?, ?)", (user_id, added_at))
             conn.commit()
+        if self._admin_cache is not None:
+            self._admin_cache.add(user_id)
 
     def remove_admin(self, user_id):
         with self._get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute("DELETE FROM admins WHERE user_id = ?", (user_id,))
             conn.commit()
+        if self._admin_cache is not None:
+            self._admin_cache.discard(user_id)
+
+    def search_products(self, query):
+        with self._get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                """SELECT * FROM products 
+                   WHERE status = 'active' AND (name LIKE ? OR location LIKE ? OR description LIKE ?) 
+                   ORDER BY id DESC""",
+                (f"%{query}%", f"%{query}%", f"%{query}%")
+            )
+            rows = cursor.fetchall()
+            return [dict(row) for row in rows]
 
 # Expose global database instance
 db = Database(config.DB_FILE)
