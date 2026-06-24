@@ -19,6 +19,10 @@ async def request_registration(update: Update, context: ContextTypes.DEFAULT_TYP
     )
 
 async def handle_contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    # Check if this is a group chat
+    if update.effective_chat.type != "private":
+        return
+
     user_id = update.effective_user.id
     contact = update.message.contact
     username = update.effective_user.username or ""

@@ -1,5 +1,5 @@
 import logging
-from telegram import Update
+from telegram import Update, ReplyKeyboardRemove
 from telegram.ext import ContextTypes
 import config
 from database import db
@@ -13,7 +13,8 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_chat.type != "private":
         bot_info = await context.bot.get_me()
         await update.message.reply_text(
-            f"Iltimos, botdan foydalanish uchun shaxsiy chatga o'ting: t.me/{bot_info.username}"
+            f"Iltimos, botdan foydalanish uchun shaxsiy chatga o'ting: t.me/{bot_info.username}",
+            reply_markup=ReplyKeyboardRemove()
         )
         return
 
@@ -48,6 +49,8 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await request_registration(update, context)
 
 async def test_btn_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_chat.type != "private":
+        return
     from telegram import InlineKeyboardButton, InlineKeyboardMarkup
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("Test tugmasi 🔘", callback_data="test_callback")]
