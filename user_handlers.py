@@ -141,7 +141,7 @@ async def handle_user_message(update: Update, context: ContextTypes.DEFAULT_TYPE
 
     # Guruh havolasi 👥
     elif text == "Guruh havolasi 👥":
-        group_link = db.get_setting('group_link', 'https://t.me/munatest1')
+        group_link = db.get_setting('group_link', config.GROUP_LINK)
         await update.message.reply_text(
             f"👥 *Muna Collection guruhimiz havolasi:*\n\n"
             f"Havola: {group_link}",

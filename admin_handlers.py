@@ -321,7 +321,7 @@ async def handle_admin_message(update: Update, context: ContextTypes.DEFAULT_TYP
 
     # Guruh havolasi 👥
     elif text == "Guruh havolasi 👥":
-        group_link = db.get_setting('group_link', 'https://t.me/munatest1')
+        group_link = db.get_setting('group_link', config.GROUP_LINK)
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("Havolani o'zgartirish ✏️", callback_data="change_group_link")]
         ])

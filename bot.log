@@ -6808,3 +6808,1179 @@ task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home
 2026-06-23 23:29:41,096 - telegram.ext.Application - INFO - Application.stop() complete
 2026-06-23 23:29:41,124 - asyncio - ERROR - Task was destroyed but it is pending!
 task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:142> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-25 00:27:12,051 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 00:27:12,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-25 00:27:12,171 - __main__ - INFO - Bot commands successfully set.
+2026-06-25 00:27:12,171 - __main__ - INFO - Deadline checker background task started.
+2026-06-25 00:27:12,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-25 00:27:12,286 - telegram.ext.Application - INFO - Application started
+2026-06-25 00:27:22,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:27:30,139 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:27:30,141 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-25 00:27:31,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 00:27:40,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:27:50,342 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:00,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:10,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:20,650 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:20,749 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2026-06-25 00:28:32,055 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:42,161 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:28:52,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:02,390 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:12,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:22,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:32,713 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:42,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:52,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:29:53,015 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2026-06-25 00:30:04,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:30:14,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:30:24,522 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:30:34,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:30:44,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:30:54,821 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:04,926 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:15,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:25,144 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:35,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:45,359 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:31:55,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:05,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:15,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:25,764 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:35,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:45,963 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:32:56,066 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:06,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:16,268 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:26,364 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:36,458 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:46,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:33:56,658 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:06,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:16,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:27,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:37,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:47,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:34:57,306 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:07,406 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:17,503 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:27,605 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:37,704 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:47,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:35:57,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:08,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:18,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:28,215 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:38,324 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:48,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:36:58,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:08,627 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:18,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:28,825 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:39,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:49,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:37:59,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:38:09,419 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:38:19,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:38:29,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:38:39,826 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:38:49,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:00,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:10,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:20,301 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:30,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:40,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:39:50,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:00,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:10,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:20,918 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:31,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:41,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:40:51,209 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:01,311 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:11,411 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:21,516 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:31,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:41,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:41:51,969 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:02,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:12,172 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:22,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:32,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:42,504 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:42:52,606 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:43:02,708 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:43:12,810 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:43:22,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 00:43:33,023 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:04:41,398 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:04:41,400 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-25 01:04:41,737 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:04:45,187 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:04:45,189 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-25 01:04:45,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:04:55,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:05,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:15,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:25,595 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:35,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:45,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:05:55,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:06,025 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:16,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:26,244 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:36,349 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:46,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:06:56,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:06,656 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:16,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:26,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:36,965 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:47,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:07:57,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:07,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:17,374 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:27,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:37,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:47,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:51,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:08:51,698 - messages - INFO - Update: Msg from user 7844532860: Qidiruv 🔍
+2026-06-25 01:08:51,698 - messages - INFO - Message received from user_id=7844532860: state=None, text=Qidiruv 🔍
+2026-06-25 01:08:52,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:01,796 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:03,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:03,293 - messages - INFO - Update: Msg from user 7844532860: sumka
+2026-06-25 01:09:03,293 - messages - INFO - Message received from user_id=7844532860: state=SEARCH_PRODUCT, text=sumka
+2026-06-25 01:09:03,616 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:08,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:08,161 - messages - INFO - Update: Msg from user 7844532860: Bekor qilish ❌
+2026-06-25 01:09:08,162 - messages - INFO - Message received from user_id=7844532860: state=SEARCH_PRODUCT, text=Bekor qilish ❌
+2026-06-25 01:09:08,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:09,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:09,692 - messages - INFO - Update: Msg from user 7844532860: Elon Joylashtirish ➕
+2026-06-25 01:09:09,692 - messages - INFO - Message received from user_id=7844532860: state=None, text=Elon Joylashtirish ➕
+2026-06-25 01:09:09,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:19,796 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:29,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:30,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:30,939 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-25 01:09:30,939 - messages - INFO - Message received from user_id=7844532860: state=AD_PHOTO, text=None
+2026-06-25 01:09:34,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:41,038 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:41,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:41,684 - messages - INFO - Update: Msg from user 7844532860: sumka
+2026-06-25 01:09:41,684 - messages - INFO - Message received from user_id=7844532860: state=AD_NAME, text=sumka
+2026-06-25 01:09:42,020 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:46,215 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:46,218 - messages - INFO - Update: Msg from user 7844532860: uy
+2026-06-25 01:09:46,218 - messages - INFO - Message received from user_id=7844532860: state=AD_LOCATION, text=uy
+2026-06-25 01:09:46,344 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:51,858 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:51,861 - messages - INFO - Update: Msg from user 7844532860: 16 kun
+2026-06-25 01:09:51,861 - messages - INFO - Message received from user_id=7844532860: state=AD_DELIVERY, text=16 kun
+2026-06-25 01:09:52,416 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:09:56,918 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:09:56,921 - messages - INFO - Update: Msg from user 7844532860: 25$
+2026-06-25 01:09:56,921 - messages - INFO - Message received from user_id=7844532860: state=AD_PRICE, text=25$
+2026-06-25 01:09:57,043 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:10:00,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:10:00,560 - messages - INFO - Update: Msg from user 7844532860: yaxshi
+2026-06-25 01:10:00,560 - messages - INFO - Message received from user_id=7844532860: state=AD_DESCRIPTION, text=yaxshi
+2026-06-25 01:10:00,697 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:10:10,671 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:10:20,769 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:10:30,776 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:10:30,779 - messages - INFO - Update: Callback from user 7844532860: ad_publish
+2026-06-25 01:10:30,779 - callbacks - INFO - Callback query received: user_id=7844532860, data=ad_publish
+2026-06-25 01:10:31,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:10:31,113 - callbacks - INFO - ad_publish details: name=sumka, photo=True, location=uy, delivery=16 kun, price=25$, description=yaxshi
+2026-06-25 01:10:31,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 01:10:31,394 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:10:31,522 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:10:31,638 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:10:31,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:10:40,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:10:50,982 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:01,083 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:10,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:10,450 - messages - INFO - Update: Msg from user 5431095932: Bozor 🛍
+2026-06-25 01:11:10,454 - messages - INFO - Message received from user_id=5431095932: state=None, text=Bozor 🛍
+2026-06-25 01:11:10,782 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:11:20,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:23,057 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:23,060 - messages - INFO - Update: Msg from user 5431095932: Guruh havolasi 👥
+2026-06-25 01:11:23,060 - messages - INFO - Message received from user_id=5431095932: state=None, text=Guruh havolasi 👥
+2026-06-25 01:11:23,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:11:33,168 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:43,280 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:46,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:46,772 - messages - INFO - Update ID 63033136: Type Update
+2026-06-25 01:11:47,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:47,112 - messages - INFO - Update: Msg from user 5431095932: [Media/No text]
+2026-06-25 01:11:52,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:52,360 - messages - INFO - Update: Msg from user 5431095932: Elon Joylashtirish ➕
+2026-06-25 01:11:56,091 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:56,093 - messages - INFO - Update: Msg from user 5431095932: Buyurtmalar 📝
+2026-06-25 01:11:57,499 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:57,500 - messages - INFO - Update: Msg from user 5431095932: Bozor 🛍
+2026-06-25 01:11:58,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:58,287 - messages - INFO - Update: Msg from user 5431095932: Karta Raqami 💳
+2026-06-25 01:11:59,821 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:11:59,823 - messages - INFO - Update: Msg from user 5431095932: Statistika 📊
+2026-06-25 01:12:09,919 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:20,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:28,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:28,273 - messages - INFO - Update: Msg from user 7844532860: Statistika 📊
+2026-06-25 01:12:28,614 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:28,617 - messages - INFO - Update: Msg from user 7844532860: Karta Raqami 💳
+2026-06-25 01:12:28,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:28,981 - messages - INFO - Update: Msg from user 7844532860: Bozor 🛍
+2026-06-25 01:12:39,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:46,925 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:12:46,926 - messages - INFO - Update: Msg from user 7844532860: Elon Joylashtirish ➕
+2026-06-25 01:12:57,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:07,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:17,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:27,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:37,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:47,552 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:13:57,654 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:07,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:17,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:27,961 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:38,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:48,153 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:14:58,255 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:08,359 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:18,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:28,554 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:38,666 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:48,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:15:58,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:08,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:12,957 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:12,959 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-25 01:16:12,959 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-25 01:16:12,976 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:142> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-25 01:16:15,847 - telegram.ext - ERROR - Network Retry Loop (Bootstrap Initialize Application): Failed run number 0 of 0. Aborting.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 136, in do_action
+    await action_cb()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 489, in initialize
+    await self.bot.initialize()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 324, in initialize
+    await super().initialize()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 865, in initialize
+    await self.get_me()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 2040, in get_me
+    return await super().get_me(
+           ^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 1005, in get_me
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2026-06-25 01:16:22,307 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 01:16:22,415 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-25 01:16:22,416 - __main__ - INFO - Bot commands successfully set.
+2026-06-25 01:16:22,416 - __main__ - INFO - Deadline checker background task started.
+2026-06-25 01:16:22,527 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-25 01:16:22,530 - telegram.ext.Application - INFO - Application started
+2026-06-25 01:16:30,727 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:30,728 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-25 01:16:31,044 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:16:40,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:47,814 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:16:47,815 - messages - INFO - Update: Msg from user 8270492933: Elon Joylashtirish ➕
+2026-06-25 01:16:57,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:08,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:18,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:18,267 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/connection.py", line 103, in handle_async_request
+    return await self._connection.handle_async_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 136, in handle_async_request
+    raise exc
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 106, in handle_async_request
+    ) = await self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 177, in _receive_response_headers
+    event = await self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_async/http11.py", line 217, in _receive_event
+    data = await self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.READ_NUM_BYTES, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 32, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 279, in do_request
+    res = await self._client.request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 680, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4767, in get_updates
+    await self._post(
+    ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    ),
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 305, in _request_wrapper
+    code, payload = await self.do_request(
+                    ^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/sirojiddin/code/Munacollection/venv/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 303, in do_request
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ReadError: 
+2026-06-25 01:17:29,839 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:39,917 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:39,918 - messages - INFO - Update: Msg from user 8270492933: /start@fevrallik_noiloj_bot
+2026-06-25 01:17:40,195 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 01:17:40,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:17:48,529 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:48,530 - messages - INFO - Update: Msg from user 8270492933: bo'ldi hal
+2026-06-25 01:17:58,633 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:58,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:17:58,763 - messages - INFO - Update: Msg from user 7844532860: yaxshi
+2026-06-25 01:18:08,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:18,993 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:24,608 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:24,610 - messages - INFO - Update: Msg from user 5431095932: /start@fevrallik_noiloj_bot
+2026-06-25 01:18:24,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 01:18:25,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:18:28,952 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:28,955 - messages - INFO - Update: Msg from user 5431095932: Bozor 🛍
+2026-06-25 01:18:28,955 - messages - INFO - Message received from user_id=5431095932: state=None, text=Bozor 🛍
+2026-06-25 01:18:29,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:18:31,742 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:31,745 - messages - INFO - Update: Msg from user 5431095932: Aloqa 📞
+2026-06-25 01:18:31,745 - messages - INFO - Message received from user_id=5431095932: state=None, text=Aloqa 📞
+2026-06-25 01:18:31,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:18:41,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:18:51,966 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:02,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:12,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:22,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:32,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:42,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:45,601 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:45,602 - messages - INFO - Update: Msg from user 7844532860: /admin
+2026-06-25 01:19:45,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:19:52,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:19:52,818 - messages - INFO - Update: Msg from user 7844532860: /start
+2026-06-25 01:19:53,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:20:02,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:08,945 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:08,948 - messages - INFO - Update: Msg from user 7844532860: Statistika 📊
+2026-06-25 01:20:08,953 - messages - INFO - Message received from user_id=7844532860: state=None, text=Statistika 📊
+2026-06-25 01:20:09,534 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:20:19,061 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:26,129 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:26,131 - messages - INFO - Update: Msg from user 7844532860: Elon Joylashtirish ➕
+2026-06-25 01:20:26,131 - messages - INFO - Message received from user_id=7844532860: state=None, text=Elon Joylashtirish ➕
+2026-06-25 01:20:26,456 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:20:36,244 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:46,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:50,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:20:50,805 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-25 01:20:50,805 - messages - INFO - Message received from user_id=7844532860: state=AD_PHOTO, text=None
+2026-06-25 01:20:50,806 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-25 01:20:50,806 - messages - INFO - Message received from user_id=7844532860: state=AD_PHOTO, text=None
+2026-06-25 01:20:54,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:00,921 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:06,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:06,692 - messages - INFO - Update: Msg from user 7844532860: aksessuarlar
+2026-06-25 01:21:06,692 - messages - INFO - Message received from user_id=7844532860: state=AD_NAME, text=aksessuarlar
+2026-06-25 01:21:07,302 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:16,797 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:20,236 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:20,238 - messages - INFO - Update: Msg from user 7844532860: ona qornidan
+2026-06-25 01:21:20,239 - messages - INFO - Message received from user_id=7844532860: state=AD_LOCATION, text=ona qornidan
+2026-06-25 01:21:20,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:24,886 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:24,888 - messages - INFO - Update: Msg from user 7844532860: 3 oy
+2026-06-25 01:21:24,888 - messages - INFO - Message received from user_id=7844532860: state=AD_DELIVERY, text=3 oy
+2026-06-25 01:21:25,028 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:34,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:34,125 - messages - INFO - Update: Msg from user 7844532860: 200$
+2026-06-25 01:21:34,125 - messages - INFO - Message received from user_id=7844532860: state=AD_PRICE, text=200$
+2026-06-25 01:21:34,463 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:39,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:39,292 - messages - INFO - Update: Msg from user 7844532860: yumshoqqina
+2026-06-25 01:21:39,292 - messages - INFO - Message received from user_id=7844532860: state=AD_DESCRIPTION, text=yumshoqqina
+2026-06-25 01:21:39,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:21:48,121 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:21:48,123 - messages - INFO - Update: Callback from user 7844532860: ad_publish
+2026-06-25 01:21:48,123 - callbacks - INFO - Callback query received: user_id=7844532860, data=ad_publish
+2026-06-25 01:21:48,701 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:21:48,703 - callbacks - INFO - ad_publish details: name=aksessuarlar, photo=True, location=ona qornidan, delivery=3 oy, price=200$, description=yumshoqqina
+2026-06-25 01:21:48,824 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-25 01:21:48,970 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:21:49,089 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:49,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:21:49,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:21:58,257 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:01,717 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:01,719 - messages - INFO - Update: Msg from user 5431095932: /start buy_8
+2026-06-25 01:22:02,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:02,291 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:22:02,411 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:11,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:21,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:30,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:30,684 - messages - INFO - Update: Msg from user 5431095932: [Media/No text]
+2026-06-25 01:22:30,684 - messages - INFO - Message received from user_id=5431095932: state=BUY_RECEIPT, text=None
+2026-06-25 01:22:31,022 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:31,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:22:31,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:22:40,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:41,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:41,241 - messages - INFO - Update: Msg from user 5431095932: Qidiruv 🔍
+2026-06-25 01:22:41,241 - messages - INFO - Message received from user_id=5431095932: state=None, text=Qidiruv 🔍
+2026-06-25 01:22:42,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:51,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:55,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:22:55,150 - messages - INFO - Update: Msg from user 5431095932: oyoq kiyim
+2026-06-25 01:22:55,150 - messages - INFO - Message received from user_id=5431095932: state=SEARCH_PRODUCT, text=oyoq kiyim
+2026-06-25 01:22:55,460 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:55,567 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:55,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:22:55,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:05,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:08,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:08,169 - messages - INFO - Update: Msg from user 5431095932: aksessuarlar
+2026-06-25 01:23:08,169 - messages - INFO - Message received from user_id=5431095932: state=SEARCH_PRODUCT, text=aksessuarlar
+2026-06-25 01:23:08,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:23:08,628 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:16,515 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:16,518 - messages - INFO - Update: Callback from user 5431095932: buy_prod_8
+2026-06-25 01:23:16,518 - callbacks - INFO - Callback query received: user_id=5431095932, data=buy_prod_8
+2026-06-25 01:23:16,856 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:23:16,980 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:17,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:17,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:17,376 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:23:17,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:25,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:25,479 - messages - INFO - Update: Msg from user 5431095932: [Media/No text]
+2026-06-25 01:23:25,479 - messages - INFO - Message received from user_id=5431095932: state=BUY_RECEIPT, text=None
+2026-06-25 01:23:26,188 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:26,444 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:23:26,704 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:23:29,320 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:29,322 - messages - INFO - Update: Msg from user 5431095932: Aloqa 📞
+2026-06-25 01:23:29,322 - messages - INFO - Message received from user_id=5431095932: state=None, text=Aloqa 📞
+2026-06-25 01:23:29,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:30,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:30,872 - messages - INFO - Update: Msg from user 5431095932: Bozor 🛍
+2026-06-25 01:23:30,872 - messages - INFO - Message received from user_id=5431095932: state=None, text=Bozor 🛍
+2026-06-25 01:23:30,987 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:31,097 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:31,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:32,170 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:23:32,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:36,336 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:36,339 - messages - INFO - Update: Callback from user 5431095932: cat_idx_1
+2026-06-25 01:23:36,343 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_1
+2026-06-25 01:23:36,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:36,557 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:36,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:36,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:23:40,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:40,495 - messages - INFO - Update: Callback from user 5431095932: cat_idx_2
+2026-06-25 01:23:40,495 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_2
+2026-06-25 01:23:40,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:40,771 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:23:40,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:46,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:46,167 - messages - INFO - Update: Callback from user 5431095932: cat_idx_3
+2026-06-25 01:23:46,167 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_3
+2026-06-25 01:23:46,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:46,568 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:46,738 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:46,868 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-25 01:23:53,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:23:53,689 - messages - INFO - Update: Callback from user 5431095932: cat_idx_4
+2026-06-25 01:23:53,690 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_4
+2026-06-25 01:23:54,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:23:54,147 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:23:54,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:03,798 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:04,365 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:04,367 - messages - INFO - Update: Callback from user 5431095932: cat_idx_5
+2026-06-25 01:24:04,367 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_5
+2026-06-25 01:24:04,944 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:05,054 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:05,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:05,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:24:05,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,139 - messages - INFO - Update: Callback from user 5431095932: cat_idx_6
+2026-06-25 01:24:11,139 - callbacks - INFO - Callback query received: user_id=5431095932, data=cat_idx_6
+2026-06-25 01:24:11,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,684 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,799 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:11,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-25 01:24:12,062 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:24:21,248 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:31,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:41,472 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:24:51,591 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:01,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:01,077 - messages - INFO - Update: Callback from user 7844532860: order_app_6
+2026-06-25 01:25:01,077 - callbacks - INFO - Callback query received: user_id=7844532860, data=order_app_6
+2026-06-25 01:25:01,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:25:01,504 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-25 01:25:01,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:25:04,793 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:04,796 - messages - INFO - Update: Callback from user 7844532860: order_app_5
+2026-06-25 01:25:04,796 - callbacks - INFO - Callback query received: user_id=7844532860, data=order_app_5
+2026-06-25 01:25:04,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-25 01:25:05,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-25 01:25:05,295 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-25 01:25:14,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:25,011 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:35,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:45,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:25:55,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:05,431 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:15,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:25,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:35,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:45,862 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:26:55,967 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:06,075 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:16,184 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:26,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:36,402 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:46,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:27:56,618 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:06,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:16,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:26,945 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:37,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:47,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:28:57,279 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:07,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:17,495 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:27,599 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:37,705 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:47,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:29:57,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:08,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:18,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:28,222 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:38,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:48,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:30:58,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:08,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:18,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:28,862 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:38,967 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:49,071 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:31:59,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:09,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:19,390 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:29,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:39,605 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:49,714 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:32:59,822 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:33:09,932 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:33:20,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:33:30,156 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:33:40,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:33:50,374 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:00,477 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:10,604 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:20,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:30,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:40,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:34:51,029 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:01,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:11,242 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:21,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:31,456 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:41,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:35:51,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:01,797 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:11,904 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:22,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:32,121 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:42,234 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:36:52,342 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:02,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:12,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:22,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:32,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:42,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:37:53,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:03,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:13,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:23,326 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:29,326 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:29,329 - messages - INFO - Update ID 63033184: Type Update
+2026-06-25 01:38:39,441 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:49,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:38:59,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:39:09,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:39:19,891 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:39:30,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:39:40,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:39:50,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:00,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:10,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:20,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:30,671 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:40,788 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:40:50,901 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:01,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:11,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:21,222 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:31,336 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:41,450 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:41:51,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:01,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:11,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:21,908 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:32,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:42,130 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:42:52,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:02,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:12,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:22,550 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:32,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:42,758 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:43:52,866 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:02,969 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:13,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:23,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:33,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:43,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:44:53,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:03,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:13,716 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:23,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:33,925 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:42,296 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-25 01:45:42,299 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-25 01:45:42,299 - telegram.ext.Application - INFO - Application.stop() complete
+2026-06-25 01:45:42,325 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:142> wait_for=<Future pending cb=[Task.task_wakeup()]>>

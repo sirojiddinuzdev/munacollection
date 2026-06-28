@@ -27,3 +27,6 @@ DB_FILE = os.getenv("DB_FILE", "sales_bot.db")
 # Default card number for payments
 DEFAULT_CARD = os.getenv("DEFAULT_CARD")
 DEFAULT_CARD_HOLDER = os.getenv("DEFAULT_CARD_HOLDER")
+
+# Telegram Group Link
+GROUP_LINK = os.getenv("GROUP_LINK")
