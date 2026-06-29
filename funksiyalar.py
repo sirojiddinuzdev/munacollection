@@ -59,6 +59,8 @@ async def start_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE, pro
             await update.callback_query.message.reply_text("Kechirasiz, ushbu mahsulot topilmadi yoki o'chirilgan.")
         return
 
+
+
     # Delete previous catalog messages to keep chat clean
     prev_msg_ids = context.user_data.get('catalog_msg_ids', [])
     if prev_msg_ids:

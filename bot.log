@@ -7984,3 +7984,222 @@ telegram.error.NetworkError: httpx.ReadError:
 2026-06-25 01:45:42,299 - telegram.ext.Application - INFO - Application.stop() complete
 2026-06-25 01:45:42,325 - asyncio - ERROR - Task was destroyed but it is pending!
 task: <Task pending name='Task-5' coro=<deadline_checker_loop() running at /home/sirojiddin/code/Munacollection/main.py:142> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2026-06-29 19:07:56,811 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-29 19:07:57,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-29 19:07:57,081 - __main__ - INFO - Bot commands successfully set.
+2026-06-29 19:07:57,082 - __main__ - INFO - Deadline checker background task started.
+2026-06-29 19:07:57,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-29 19:07:57,576 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-29 19:07:57,580 - telegram.ext.Application - INFO - Application started
+2026-06-29 19:07:57,769 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:07:58,005 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMediaGroup "HTTP/1.1 200 OK"
+2026-06-29 19:07:58,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:08:08,035 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:08:34,357 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:08:44,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:08:45,223 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:08:45,226 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-29 19:08:46,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:08:50,071 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:08:50,073 - messages - INFO - Update: Msg from user 8270492933: Elon Joylashtirish ➕
+2026-06-29 19:08:50,074 - messages - INFO - Message received from user_id=8270492933: state=None, text=Elon Joylashtirish ➕
+2026-06-29 19:08:50,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:00,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:01,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:01,409 - messages - INFO - Update: Msg from user 8270492933: [Media/No text]
+2026-06-29 19:09:01,410 - messages - INFO - Message received from user_id=8270492933: state=AD_PHOTO, text=None
+2026-06-29 19:09:04,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:10,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:10,833 - messages - INFO - Update: Msg from user 8270492933: 12345
+2026-06-29 19:09:10,833 - messages - INFO - Message received from user_id=8270492933: state=AD_NAME, text=12345
+2026-06-29 19:09:11,327 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:12,824 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:12,827 - messages - INFO - Update: Msg from user 8270492933: asdfg
+2026-06-29 19:09:12,827 - messages - INFO - Message received from user_id=8270492933: state=AD_LOCATION, text=asdfg
+2026-06-29 19:09:13,012 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:16,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:16,502 - messages - INFO - Update: Msg from user 8270492933: we4r5t6y
+2026-06-29 19:09:16,502 - messages - INFO - Message received from user_id=8270492933: state=AD_DELIVERY, text=we4r5t6y
+2026-06-29 19:09:16,747 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:20,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:20,566 - messages - INFO - Update: Msg from user 8270492933: 456tyui
+2026-06-29 19:09:20,566 - messages - INFO - Message received from user_id=8270492933: state=AD_PRICE, text=456tyui
+2026-06-29 19:09:20,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:24,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:24,758 - messages - INFO - Update: Msg from user 8270492933: asdfghjkiuytrewazxcvbn
+2026-06-29 19:09:24,758 - messages - INFO - Message received from user_id=8270492933: state=AD_DESCRIPTION, text=asdfghjkiuytrewazxcvbn
+2026-06-29 19:09:24,957 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,066 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,068 - messages - INFO - Update: Callback from user 8270492933: ad_publish
+2026-06-29 19:09:28,068 - callbacks - INFO - Callback query received: user_id=8270492933, data=ad_publish
+2026-06-29 19:09:28,235 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,236 - callbacks - INFO - ad_publish details: name=12345, photo=True, location=asdfg, delivery=we4r5t6y, price=456tyui, description=asdfghjkiuytrewazxcvbn
+2026-06-29 19:09:28,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,579 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:28,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-29 19:09:29,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:09:38,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:48,502 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:48,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:09:48,883 - messages - INFO - Update: Msg from user 7844532860: /start buy_9
+2026-06-29 19:09:49,536 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:09:59,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:09,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:09,442 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-29 19:10:09,442 - messages - INFO - Message received from user_id=7844532860: state=BUY_RECEIPT, text=None
+2026-06-29 19:10:09,949 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:10:10,185 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:10:18,735 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:18,737 - messages - INFO - Update: Msg from user 7208164975: /start buy_9
+2026-06-29 19:10:19,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:10:29,170 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:32,817 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:32,819 - messages - INFO - Update: Callback from user 8270492933: order_app_7
+2026-06-29 19:10:32,820 - callbacks - INFO - Callback query received: user_id=8270492933, data=order_app_7
+2026-06-29 19:10:33,457 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageReplyMarkup "HTTP/1.1 200 OK"
+2026-06-29 19:10:33,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:10:33,835 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-29 19:10:34,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:10:43,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:48,686 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:10:48,689 - messages - INFO - Update: Callback from user 7208164975: sold_btn_dummy
+2026-06-29 19:10:48,689 - callbacks - INFO - Callback query received: user_id=7208164975, data=sold_btn_dummy
+2026-06-29 19:10:49,192 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:10:58,846 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:24:13,952 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-29 19:24:14,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-29 19:24:14,124 - __main__ - INFO - Bot commands successfully set.
+2026-06-29 19:24:14,124 - __main__ - INFO - Deadline checker background task started.
+2026-06-29 19:24:14,293 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-29 19:24:14,296 - telegram.ext.Application - INFO - Application started
+2026-06-29 19:24:14,803 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:24:14,805 - messages - INFO - Update: Msg from user 5431095932: buldimi
+2026-06-29 19:24:14,806 - messages - INFO - Update: Msg from user 5431095932: endi
+2026-06-29 19:24:14,806 - messages - INFO - Update: Msg from user 8270492933: yaq\
+2026-06-29 19:24:24,992 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:24:35,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:24:45,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:24:55,581 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:25:05,753 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:25:54,744 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-29 19:25:55,036 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/setMyCommands "HTTP/1.1 200 OK"
+2026-06-29 19:25:55,037 - __main__ - INFO - Bot commands successfully set.
+2026-06-29 19:25:55,037 - __main__ - INFO - Deadline checker background task started.
+2026-06-29 19:25:55,191 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-29 19:25:55,195 - telegram.ext.Application - INFO - Application started
+2026-06-29 19:25:55,671 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:25:55,673 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-29 19:25:55,860 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:25:58,032 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:25:58,035 - messages - INFO - Update: Msg from user 8270492933: /start
+2026-06-29 19:25:58,228 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:00,570 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:00,573 - messages - INFO - Update: Msg from user 8270492933: Elon Joylashtirish ➕
+2026-06-29 19:26:00,574 - messages - INFO - Message received from user_id=8270492933: state=None, text=Elon Joylashtirish ➕
+2026-06-29 19:26:00,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:10,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:14,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:14,330 - messages - INFO - Update: Msg from user 8270492933: [Media/No text]
+2026-06-29 19:26:14,331 - messages - INFO - Message received from user_id=8270492933: state=AD_PHOTO, text=None
+2026-06-29 19:26:17,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:23,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:23,229 - messages - INFO - Update: Msg from user 8270492933: ghjf
+2026-06-29 19:26:23,229 - messages - INFO - Message received from user_id=8270492933: state=AD_NAME, text=ghjf
+2026-06-29 19:26:23,767 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:27,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:27,023 - messages - INFO - Update: Msg from user 8270492933: hgfjdksl
+2026-06-29 19:26:27,023 - messages - INFO - Message received from user_id=8270492933: state=AD_LOCATION, text=hgfjdksl
+2026-06-29 19:26:27,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:28,717 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:28,720 - messages - INFO - Update: Msg from user 8270492933: 67584
+2026-06-29 19:26:28,721 - messages - INFO - Message received from user_id=8270492933: state=AD_DELIVERY, text=67584
+2026-06-29 19:26:28,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:39,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:49,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:50,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:50,789 - messages - INFO - Update: Msg from user 8270492933: 345678
+2026-06-29 19:26:50,789 - messages - INFO - Message received from user_id=8270492933: state=AD_PRICE, text=345678
+2026-06-29 19:26:51,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:26:54,743 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:54,747 - messages - INFO - Update: Msg from user 8270492933: sdfghjkl;iuytrexcvbn
+2026-06-29 19:26:54,747 - messages - INFO - Message received from user_id=8270492933: state=AD_DESCRIPTION, text=sdfghjkl;iuytrexcvbn
+2026-06-29 19:26:55,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:26:58,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:26:58,257 - messages - INFO - Update: Callback from user 8270492933: ad_publish
+2026-06-29 19:26:58,257 - callbacks - INFO - Callback query received: user_id=8270492933, data=ad_publish
+2026-06-29 19:26:58,680 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:26:58,682 - callbacks - INFO - ad_publish details: name=ghjf, photo=True, location=hgfjdksl, delivery=67584, price=345678, description=sdfghjkl;iuytrexcvbn
+2026-06-29 19:26:59,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getMe "HTTP/1.1 200 OK"
+2026-06-29 19:26:59,364 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:26:59,839 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:27:00,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/deleteMessage "HTTP/1.1 200 OK"
+2026-06-29 19:27:00,575 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:27:08,889 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:19,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:21,058 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:21,060 - messages - INFO - Update: Msg from user 7844532860: /start buy_10
+2026-06-29 19:27:22,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:27:29,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:29,738 - messages - INFO - Update: Msg from user 7844532860: [Media/No text]
+2026-06-29 19:27:29,738 - messages - INFO - Message received from user_id=7844532860: state=BUY_RECEIPT, text=None
+2026-06-29 19:27:30,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:27:30,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:27:39,907 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:41,256 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:41,258 - messages - INFO - Update: Callback from user 8270492933: order_app_8
+2026-06-29 19:27:41,258 - callbacks - INFO - Callback query received: user_id=8270492933, data=order_app_8
+2026-06-29 19:27:41,718 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:27:41,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-29 19:27:42,106 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:27:51,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:53,471 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:27:53,474 - messages - INFO - Update: Msg from user 7208164975: /start buy_10
+2026-06-29 19:27:53,997 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:28:03,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:04,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:04,434 - messages - INFO - Update: Msg from user 7208164975: [Media/No text]
+2026-06-29 19:28:04,434 - messages - INFO - Message received from user_id=7208164975: state=BUY_RECEIPT, text=None
+2026-06-29 19:28:04,938 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:28:05,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendPhoto "HTTP/1.1 200 OK"
+2026-06-29 19:28:07,758 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:07,760 - messages - INFO - Update: Callback from user 8270492933: order_app_9
+2026-06-29 19:28:07,760 - callbacks - INFO - Callback query received: user_id=8270492933, data=order_app_9
+2026-06-29 19:28:07,951 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-29 19:28:08,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/editMessageCaption "HTTP/1.1 200 OK"
+2026-06-29 19:28:08,354 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/sendMessage "HTTP/1.1 200 OK"
+2026-06-29 19:28:17,941 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:28,163 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:38,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:48,494 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:28:58,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:08,863 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:19,057 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:29,297 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:39,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:49,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:29:59,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:30:10,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:30:20,229 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:30:30,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:30:40,670 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:30:50,911 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:01,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:11,391 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:21,631 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:31,921 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:42,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:31:52,400 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:02,638 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:12,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:23,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:33,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:43,654 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:32:53,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:04,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:14,422 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:24,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:34,945 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:45,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:33:55,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"
+2026-06-29 19:34:05,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8657142758:AAGUQRm-T_ITFafMBJHzhBNQ2ZhjhuXQ4oE/getUpdates "HTTP/1.1 200 OK"

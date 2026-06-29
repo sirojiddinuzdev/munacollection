@@ -24,6 +24,9 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Check if this is a deep link for a purchase
     if args and args[0].startswith("buy_"):
         product_id = int(args[0].split("_")[1])
+        
+
+            
         if not await is_authorized(update, context):
             # Save pending purchase and ask for registration
             context.user_data['pending_buy_product_id'] = product_id
